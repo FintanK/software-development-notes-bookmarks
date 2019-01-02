@@ -45,6 +45,8 @@ TBW
 
 # Images on the Web
 
+TBW
+
 # Semantic Web Applications
 
 The first reference to the term "Semantic Web" was made by Tim Berners Lee back in 2011 in this publication [Google Scholar Link](http://scholar.google.co.uk/scholar_url?url=https://kask.eti.pg.gda.pl/redmine/projects/sova/repository/revisions/master/entry/doc/Master%2520Thesis%2520(In%2520Polish)/materials/10.1.1.115.9584.pdf&hl=en&sa=X&scisig=AAGBfm2r1XqP0ka20GZUp7W6sZup22to4Q&nossl=1&oi=scholarr)
@@ -220,10 +222,12 @@ TBW
 # Progressive Web Applications
 
 ## Service workers
+
+TBW
     
 ## PWA Icons
  
-    
+TBW   
 
 # Build Tools for Web Applications
 
@@ -306,11 +310,13 @@ How merkle trees work https://en.wikipedia.org/wiki/Merkle_tree
 
 This can be as simple as having a development, QA, UAT and production server but there are many different configurations that can be useful depending on your project.
     
-    
 ## Using environment variables
+
+TBW
     
 ## Safely injecting and encrypting API keys
     
+TBW
 
 ## Private Registries / Artefact Repositories
 
@@ -318,6 +324,7 @@ C# Nuget
 NPM - Verdaccio
 JAVA - Maven Gradle repositories.
 
+TBW
     
 #### Security on registries / artifact repositories
     
@@ -327,12 +334,16 @@ Chef
 Vagrant
 Docker / Docker Swarm
 PM2
+
+TBW
  
 # Removing friction from the development workflow
 
 Automate release notes
 Avoid scope creep
 Remove the need for hotfixes 
+
+TBW
 
 # Software Development and Testing Strategies
 
@@ -347,34 +358,21 @@ Generality
 Incremental Development
 Reliability
 
-
-
--   GIT Flow
-
+- GIT Flow
 - DRY Principles 
 - Service-Oriented Architecture
 - Microservices
-    
--   Functional Programming
-    
--   Reactive Programming
-    
+- Functional Programming 
+- Reactive Programming
 -   Separation of concerns
-    
--   Modularity of Code
-    
+-   Modularity of Code 
 -   Unit Testing
-    
 -   Integration Testing
-    
 -   BDD with Cucumber
-    
--   End to end
-    
+-   End to end   
 -   SOLID Principles
 -   Browser Testing
 -   Behavioural Testing
-
 -   Commitzen
       
   
@@ -415,7 +413,6 @@ TBW
 
 # Scaling applications for Enterprise use and large traffic
   
-
 -   Docker
 -   Docker Swarm
 -   The role of clustering
@@ -423,8 +420,7 @@ TBW
 -   Server clustering
 -   Application and server logging  
 -   Load Balancing   
--   Message Queueing
-     
+-   Message Queueing   
 
 # Team Management and Approaches
 
