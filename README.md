@@ -1,8 +1,12 @@
 # Software Engineering Markdown
 
-This markdown file attemptsto provide many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
+This markdown file attempts to provide many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
-# HTML (Hyper Text Markup Language)
+# Markdown
+
+Markdown reference https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+# HTML (Hyper-Text Markup Language)
 
 - W3C Specification https://www.w3.org/TR/html52/
 
