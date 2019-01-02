@@ -1,4 +1,4 @@
-# Software Engineering Markdown
+# Software Engineering Markdown (Work In Progress)
 
 This markdown file attempts to provide many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
