@@ -1,9 +1,10 @@
-# Software Engineering Markdown (Work In Progress)
+# Software Developoment Bookmarks (Work In Progress)
 
 This markdown file attempts to provide many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
 # Links
 
+https://github.com/dypsilon/frontend-dev-bookmarks - Frontend development bookmarks
 https://developer.mozilla.org/en-US/docs/Web - Mozilla Developer Network
 http://www.tutorialspoint.com/ - Tutorialspoint
 https://www.smashingmagazine.com/ - Smashing Magazine
@@ -546,6 +547,8 @@ Pivotal Cloud Foundry (Manage your project, develop, builkd test deploy) https:/
 
 # PHP Development
 
+Awesome PHP https://github.com/ziadoz/awesome-php (Comprehensive .NET Development Bookmarks)
+
 Official documentation http://php.net/manual/en/
 Composer (The best PHP package manager for dependency management) https://getcomposer.org/
 Laravel (One of the best PHP Frameworks) - https://laravel.com/
@@ -558,6 +561,8 @@ Wordpress Codex - Build your applications on top of wordpress with custom themes
 Official documentation https://guides.rubyonrails.org/
 
 # C# Development
+
+Awesome .NET https://github.com/quozd/awesome-dotnet (Comprehensive .NET Development Bookmarks)
 
 NuGet package manager https://www.nuget.org/
 .NET Entity Framework https://docs.microsoft.com/en-us/ef/
