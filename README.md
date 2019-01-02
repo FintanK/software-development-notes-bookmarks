@@ -2,6 +2,18 @@
 
 This markdown file attempts to provide many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
+# Links
+
+https://developer.mozilla.org/en-US/docs/Web - Mozilla Developer Network
+http://www.tutorialspoint.com/ - Tutorialspoint
+https://www.smashingmagazine.com/ - Smashing Magazine
+https://tympanus.net/codrops/ - Tympanus Codrops
+https://www.toptal.com/developers/blog - Toptal
+
+# Developer Blogs
+
+https://flaviocopes.com/ - Flavio Copes (Frontend development).
+
 # Markdown
 
 Markdown reference https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
@@ -12,7 +24,7 @@ Markdown reference https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsh
 
 ## HTML5 API
 
-TBW
+HTML 5 API Overview (Handy reference) https://platform.html5.org/
 
 # CSS (Cascasding Stylesheet)
 
@@ -21,6 +33,7 @@ TBW
 ## CSS Layout
 
 A 2018 Guide to CSS layouts https://www.smashingmagazine.com/2018/05/guide-css-layout/
+Browser Media Queries https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 
 ## Popular CSS Libraries and Frameworks
 
@@ -39,9 +52,16 @@ Semantic UI https://semantic-ui.com/
 
 - BEM (Block Element Modifier) http://getbem.com/introduction/
 
+# XML (Extensible Markup Language)
+
+Extensible Markup Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. The W3C's XML 1.0 Specification and several other related specifications—all of them free open standards—define XML
+
+A list of popular XML Schemas used on the web https://en.wikipedia.org/wiki/List_of_types_of_XML_schemas
+
 # Fonts on the Web
 
-TBW
+Web Fonts Guide https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
+
 
 # Images on the Web
 
@@ -71,10 +91,11 @@ JSON LD (JSON Linked Data) https://json-ld.org/
 # Web Components
 
 An introduction to web components from Mozilla https://developer.mozilla.org/en-US/docs/Web/Web_Components
+Custom Elements W3C Specification https://www.w3.org/TR/2018/NOTE-custom-elements-20180503/
 
 ## Shadow DOM
 
-Custom Elements W3C Specification https://www.w3.org/TR/2018/NOTE-custom-elements-20180503/
+Shadow DOM refers to the ability of the browser to include a subtree of DOM elements into the rendering of a document, but not into the main document DOM tree.
 
 Shadow DOM W3C Specificatin https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/
 
@@ -90,11 +111,18 @@ Whilst these frameworks might not follow the official W3C outlines for web compo
 
 ## Frontend Responsive Design
 
-TBW
+Media Queries
+
 
 ## Client Side Detection
 
-### Polyfills
+#### Browser User Agent
+
+- Check your browser user agent https://www.whatismybrowser.com/detect/what-is-my-user-agent
+- Mozilla Developer Network - Browser detection using the user agent https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent
+
+
+#### Polyfills
 
 Polyfills allow older browsers to handle HTML, CSS and Javascript features that would typically not be available with your client side code.
     
@@ -207,6 +235,10 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 - Deploying Angular Applications to a serverless environment https://medium.com/@maciejtreder/angular-serverless-a713e86ea07a
 - Angular Universal (Server Side Rendering) https://angular.io/guide/universal
 
+## Useful Angular 2+ Packages
+
+- https://github.com/atularen/ngx-monaco-editor (Browser-based code editor for Microsoft. Angular component.)
+
 ## State Management with NgRX
 
 TBW
@@ -305,14 +337,21 @@ How merkle trees work https://en.wikipedia.org/wiki/Merkle_tree
 
 ## Cloud Services
 
+#### Microsoft Azure
+
+https://azure.microsoft.com/en-gb/services/ - Overview of products and solutions
+
+#### Google Cloud Services
+
+https://cloud.google.com/products/ - Overview of products and solutions
 
 ## Deployment Environments
 
 This can be as simple as having a development, QA, UAT and production server but there are many different configurations that can be useful depending on your project.
     
-## Using environment variables
+## Environment variables: Why and how.
 
-TBW
+
     
 ## Safely injecting and encrypting API keys
     
@@ -320,12 +359,21 @@ TBW
 
 ## Private Registries / Artefact Repositories
 
-C# Nuget
-NPM - Verdaccio
+Verdaccio (NPM Registry)
 JAVA - Maven Gradle repositories.
 
-TBW
-    
+## CI Platforms and Tools
+
+https://semaphoreci.com/ - Semaphore CI
+https://jenkins.io/ - Jenkins
+https://azure.microsoft.com/en-gb/solutions/architecture/azure-devops-continuous-integration-and-continuous-deployment-for-azure-web-apps/ - Microsoft Azure CI/CD
+https://cloud.google.com/cloud-build/ - Google Cloud Build
+https://aws.amazon.com/ - Amazon Web Services
+
+## IAAS (Infrastructure as a service)
+
+https://www.netlify.com/ - All-in-one platform for automating modern web projects.
+
 #### Security on registries / artifact repositories
     
 # Provisioning Tools / Virtualization / Snapshots
@@ -413,8 +461,12 @@ TBW
 
 # Scaling applications for Enterprise use and large traffic
   
--   Docker
+-   Docker https://www.docker.com/
+-   Docker Desktop https://www.docker.com/products/docker-desktop
+-   Docker Hub https://hub.docker.com/
+-   Kitematic (Simple to use GUI tool to provision docker containers on your desktop). https://kitematic.com/
 -   Docker Swarm
+-   Kubernetes https://kubernetes.io/
 -   The role of clustering
 -   Application clustering 
 -   Server clustering
@@ -426,11 +478,15 @@ TBW
 
 ## LEAN Development
 
-Link to book The LEAN Startup
+Principles of LEAN Development https://leankit.com/learn/lean/principles-of-lean-development/
+
+#### Books
+
+The LEAN Startup by Eric Ries http://theleanstartup.com/
 
 ## Agile Development
 
-TBW
+
 
 -   Scrum
     
@@ -438,14 +494,12 @@ TBW
      
 
 ## Tools
-
-  
--   JIRA
-    
--   TeamCITY [https://www.jetbrains.com/teamcity/](https://www.jetbrains.com/teamcity/)
-    
--   TFS (Microsoft Team Services)
-    
+ 
+- JIRA  
+- Confluence
+- TeamCITY [https://www.jetbrains.com/teamcity/](https://www.jetbrains.com/teamcity/) 
+- TFS (Microsoft Team Services)   
+- Lists, boards and cards https://trello.com/
  
 
 # REST API Development
@@ -453,37 +507,33 @@ TBW
 -   REST API Design Best Practices
 -   JSON Web Tokens (JWT) for Authentication
 -   OAuth
--   HTTP Headers
--   Swagger (Self documenting our API)
+-   HTTP Headers 
+-   Swagger (Self documenting your API) https://swagger.io/
     
 
 # JAVA Development
 
-Spring Framework
+JAVA Spring Framework https://spring.io/
+Pivotal Cloud Foundry (Manage your project, develop, builkd test deploy) https://pivotal.io/platform , https://pivotal.io/learn
 
 # PHP Development
 
-Official documentation
-Composer
-Laravel
-Symfony
-Silex
+Official documentation http://php.net/manual/en/
+Composer (The best PHP package manager for dependency management) https://getcomposer.org/
+Laravel (One of the best PHP Frameworks) - https://laravel.com/
+Symfony (Also one of the best PHP Frameworks) - https://symfony.com/
+Silex - Lightweight PHP Framework https://silex.symfony.com/
+Wordpress Codex - Build your applications on top of wordpress with custom themes, plugins etc - https://codex.wordpress.org/
 
 # Ruby on rails development
 
-TBD
+Official documentation https://guides.rubyonrails.org/
 
 # C# Development
 
-TBD
-
-# IOS Development
-
-TBD
-
-# Android Development
-
-TBD
+NuGet package manager https://www.nuget.org/
+.NET Entity Framework https://docs.microsoft.com/en-us/ef/
+Azure devops (Will succeed Nuget private servers) https://azure.microsoft.com/en-gb/services/devops/
   
 # Blockchain Development
 
@@ -502,29 +552,26 @@ The blockchain is a promising technology that has progressed at an ever increasi
 How blockchain is alredy taking over (Coldfusion) https://www.youtube.com/watch?v=kP6EezXJKNM
 How big is Bitcoin? https://www.youtube.com/watch?v=zrY3i85W5tU
 
+## Bitcoin
+
+Bitcoin whitepaper https://bitcoin.org/bitcoin.pdf
+
+
 ## EOS
 
-CLEOS
+EOS Developers Portal https://developers.eos.io/
     
 ##  Ethereum
 
-Web3 API
-Truffle
-Ganache
+Web3 API https://github.com/ethereum/wiki/wiki/JavaScript-API
+
+#### Popular Ethereum Tools and Libraries
+
+Truffle https://github.com/trufflesuite/truffle
+Ganache https://truffleframework.com/ganache
+
+## Interesting Blockchain Projects
+
+https://storj.io/ - Distributed data storage with clients earning tokens for the storage they provide.
 
 
-# Artifical Intelligence
-
-The area of artifical technology has seen many failed and successful implementations with the goal posts being moved depending on the project. The most advanced AI that exist today are undoubtedly in the area of neural networks.
-
-## Videos
-
-Top 5 uses of Neural Networks (Coldfusion) https://www.youtube.com/watch?v=i9MfT_7R_4w
-
-## Deep Learning
-
-## Maching Learning
-
-## Neural Networks
-
-## Popular Libraries and Frameworks
