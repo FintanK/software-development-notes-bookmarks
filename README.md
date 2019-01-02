@@ -474,9 +474,28 @@ TBW
 -   Load Balancing   
 -   Message Queueing   
 
+# IT Law
+
+PCI ( Payment Card Industry) Compliance https://www.pcicomplianceguide.org/faq/
+
+## Software Licenses
+
+Software license guide https://choosealicense.com/licenses/
+
 # Team Management and Approaches
 
-## LEAN Development
+## Agile Development
+
+#### Scrum
+
+Scrum.org Guide https://www.scrumguides.org/scrum-guide.html
+Scrum at Scale Guide https://www.scrumatscale.com/scrum-at-scale-guide-read-online/
+
+Product Owner Role https://www.mountaingoatsoftware.com/agile/scrum/roles/product-owner
+Scrum Master Role https://www.mountaingoatsoftware.com/agile/scrum/roles/scrummaster
+Scrum Team Role https://www.mountaingoatsoftware.com/agile/scrum/roles/team    
+    
+#### Kanban and LEAN Development
 
 Principles of LEAN Development https://leankit.com/learn/lean/principles-of-lean-development/
 
@@ -484,33 +503,42 @@ Principles of LEAN Development https://leankit.com/learn/lean/principles-of-lean
 
 The LEAN Startup by Eric Ries http://theleanstartup.com/
 
-## Agile Development
+https://www.blueprintsys.com/agile-development-101/agile-methodologies - A guide to Agile Methodologies
 
-
-
--   Scrum
-    
--   Kanban
+#### XP (Extreme Programming)
      
 
-## Tools
+#### Tools
  
-- JIRA  
-- Confluence
+- JIRA  https://www.atlassian.com/software/jira
+- JIRA Ops https://www.atlassian.com/software/jira/ops
+- Confluence https://www.atlassian.com/software/confluence
 - TeamCITY [https://www.jetbrains.com/teamcity/](https://www.jetbrains.com/teamcity/) 
-- TFS (Microsoft Team Services)   
+- TFS (Microsoft Team Services) (Now Azure Devops Server) https://azure.microsoft.com/en-us/services/devops/server/
 - Lists, boards and cards https://trello.com/
  
+# Protocol
+
+## HTTP
 
 # REST API Development
 
--   REST API Design Best Practices
--   JSON Web Tokens (JWT) for Authentication
--   OAuth
--   HTTP Headers 
--   Swagger (Self documenting your API) https://swagger.io/
-    
+## REST API Design Best Practices
 
+## Authentication
+
+#### JSON Web Tokens (JWT) for Authentication
+
+TBW
+
+#### OAuth
+
+TBW
+
+## Documentation
+
+Swagger (Self documenting your API) https://swagger.io/
+    
 # JAVA Development
 
 JAVA Spring Framework https://spring.io/
@@ -555,7 +583,6 @@ How big is Bitcoin? https://www.youtube.com/watch?v=zrY3i85W5tU
 ## Bitcoin
 
 Bitcoin whitepaper https://bitcoin.org/bitcoin.pdf
-
 
 ## EOS
 
