@@ -240,10 +240,6 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 
 - https://github.com/atularen/ngx-monaco-editor (Browser-based code editor for Microsoft. Angular component.)
 
-## State Management with NgRX
-
-TBW
-
 # State Management for Web Applications
 
 ## Redux Design Pattern
@@ -252,6 +248,10 @@ TBW
 -   Reducers
 -   Effects
 -   Selectors
+
+## State Management with NgRX
+
+![NgRX Data Flow](./NGRX DATA FLOW.JPG "NgRX Data Flow")
 
 # Progressive Web Applications
 
