@@ -251,6 +251,7 @@ TBW
 -   Actions
 -   Reducers
 -   Effects
+-   Selectors
 
 # Progressive Web Applications
 
