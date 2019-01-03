@@ -242,14 +242,126 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 
 # State Management for Web Applications
 
-## Redux Design Pattern
+Application state: Just like the server, the browser can have different types of states.
 
--   Actions
--   Reducers
--   Effects
--   Selectors
+- Server Response Data
+- User information
+- User Input
+- UI State
+- Router / location state
+
+State Management Libraries
+
+- Model our app state
+- Update the state
+- Read state values
+- Monitor changs to the state
+
+## The Redux Design Pattern / Architecture
+
+The three principles of Redux.
+
+- Single source of truth.
+- State is read-only.
+- Pure functions update the state
+
+One of the biggest benefits of using state management with Angular and NgRX is that the duplicate dependency injection of data services
+can be moved out from the components to the state management logic.
+
+In Universal (Server side rendered) Angular apps you can prepopulate the store on page load and avoid the many HTTP many requests needed for this logic with an SPA (Single Page Application).
+
+Great developer tools including time travel debugging.
+
+Easier testing of how data retrieved in the client application is used.
+
+Because the state is read only, our components just have to **react** to state changes. Our components role when using state management is to subscribe to the store and respond appropriately.
+
+**Actions** are dispatched in order to update the application state but do not update the state themselves. This gives us an "immutable update pattern" which basically means that we clearly define how data is updated in our client applications.
+
+**Reducers** are pure functions (taken from the functional programming methodology) that update the application state. Given the same input they will always have the same output. They don't modify any data outside of their functional scope. This output is typically an updated application state.
+
+#### Redux Core Concepts
+
+###### Single state tree
+
+A single state tree is a single Javascript object. It is composed / built up using reducers.
+
+It has an initial state. When the application loads.
+
+**An example state**
+
+```
+const state = {
+    todos: []
+};
+```
+
+###### Actions
+
+Actions have two properties
+
+- Type (usually a string, describing the action).
+- Payload (this is optional)
+
+They are typically dipatched by a component based on any event of your choice.
+
+**An example action**
+
+```
+const action = {
+    type: 'ADD_TO_DO',
+    payload: {
+      label: 'Go for a jog',
+      complete: false
+    }
+};
+```
+
+###### Reducers
+
+**An example reducer**
+
+This is a pure function. It does not mutate any data outside of it's own scope.
+
+```
+function reducer(state, action) {
+    switch(action.type) {
+       case: 'ADD_TO_DO': {
+        const todo = action.payload;
+        const todos = [...state.todos, todo],
+        return [ todos]; // Update the state and pass back
+       }
+    }  
+    return state; // Return the passed state by default
+}
+```
+
+This would result in the state being updated
+
+```
+const state = {
+    todos: [
+      { labelL 'Go for a jog', complete: false }
+    ]
+};
+```
+
+###### Store
+
+- The state container. Injected into components that need it.
+- Components use the store to dispatch events
+- Components use the store to subscribe to state updates.
+- Handles responsibility of invoking reducers.
+
+###### One-way data flow.
+
+![One way data flow in redux](http://www.mrscottmcallister.com/assets/img/redux-flow.png)
 
 ## State Management with NgRX
+
+NgRX is made up of NgRX Store and Effects.
+
+
 
 ![NgRX Data Flow](NGRX DATA FLOW.JPG)
 
