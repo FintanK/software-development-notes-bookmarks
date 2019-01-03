@@ -251,7 +251,7 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 
 ## State Management with NgRX
 
-![NgRX Data Flow](./NGRX DATA FLOW.JPG "NgRX Data Flow")
+![NgRX Data Flow](NGRX DATA FLOW.JPG)
 
 # Progressive Web Applications
 
