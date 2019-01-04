@@ -240,9 +240,24 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 
 - https://github.com/atularen/ngx-monaco-editor (Browser-based code editor for Microsoft. Angular component.)
 
+## Architecting your Angular applications with Nx (Highly recommended)
+
+Nx is brilliant. It allows you to manage your application with a more advanced CLI tool that automates more than the standard Angular CLI.
+
+Nx Workspace
+Workspace-Specific Schematics
+State Management
+NgRx
+Data Persistence
+Linters
+Code Formatter
+UpgradeModule and dowgradeModule helpers
+
+Find out more at https://nrwl.io/nx/overview
+
 # State Management for Web Applications
 
-Application state: Just like the server, the browser can have different types of states.
+Just like the server, the browser can have different types of states to manage...
 
 - Server Response Data
 - User information
@@ -265,8 +280,8 @@ The three principles of Redux.
 - State is read-only.
 - Pure functions update the state
 
-One of the biggest benefits of using state management with Angular and NgRX is that the duplicate dependency injection of data services
-can be moved out from the components to the state management logic.
+One of the biggest benefits of using state management is that the duplicate dependency injection of data services
+can be moved out from the components to the state management library implementation.
 
 In Universal (Server side rendered) Angular apps you can prepopulate the store on page load and avoid the many HTTP many requests needed for this logic with an SPA (Single Page Application).
 
@@ -276,9 +291,7 @@ Easier testing of how data retrieved in the client application is used.
 
 Because the state is read only, our components just have to **react** to state changes. Our components role when using state management is to subscribe to the store and respond appropriately.
 
-**Actions** are dispatched in order to update the application state but do not update the state themselves. This gives us an "immutable update pattern" which basically means that we clearly define how data is updated in our client applications.
-
-**Reducers** are pure functions (taken from the functional programming methodology) that update the application state. Given the same input they will always have the same output. They don't modify any data outside of their functional scope. This output is typically an updated application state.
+**Reducers** 
 
 #### Redux Core Concepts
 
@@ -303,9 +316,7 @@ Actions have two properties
 - Type (usually a string, describing the action).
 - Payload (this is optional)
 
-They are typically dipatched by a component based on any event of your choice.
-
-**An example action**
+These are dispatched by components in order to update the application state but do not update the state themselves. This gives us an "immutable update pattern" which basically means that we clearly define how data is updated in our client applications.
 
 ```
 const action = {
@@ -319,7 +330,7 @@ const action = {
 
 ###### Reducers
 
-**An example reducer**
+These are pure functions (taken from the functional programming methodology) that update the application state. Given the same input they will always have the same output. They don't modify any data outside of their functional scope. This output is typically an updated application state.
 
 This is a pure function. It does not mutate any data outside of it's own scope.
 
@@ -357,13 +368,108 @@ const state = {
 
 ![One way data flow in redux](http://www.mrscottmcallister.com/assets/img/redux-flow.png)
 
-## State Management with NgRX
+###### Immutability
+
+"An immutable object is an object that cannot be modified after creation."
+
+Why would we make an object immutable?
+
+- Predictability
+- Explicit State Changes
+- Performance
+- Mutation Tracking
+- Undoing state changes
+
+## State Management with NgRX for Angular.
 
 NgRX is made up of NgRX Store and Effects.
 
+NgRX Store on Github https://github.com/ngrx/store
+NgRx Effects https://github.com/ngrx/effects
 
+#### What is NgRX Store?
 
-![NgRX Data Flow](NGRX DATA FLOW.JPG)
+Official documentation https://ngrx.io/guide/store
+
+Inspired by the Redux architecture NgRX Store using RXJS Observables to provide state management in Angular.
+
+###### Benefits of NgRX Store
+
+- Single source of truth
+- Testability
+- Performance Benefits (one-way data flow. No unexpected events in your components around data management).
+- Root and feature module support (eager ad laxy loaded modules).
+
+###### Store selectors
+
+This is probably the toughest part about NgRX in general but they are well worth implementing
+
+A very basic component implementation interacting with the store would look something like this..
+
+```
+import { Store } from '@ngrx/store'
+// other imports
+
+export class YourCustomComponent implements OnInit {
+
+   constructor(private store: Store<fromStore.ToDosState>) {
+    
+   }
+   
+   ngOnInit() {
+    this.store.select<>('todos').subscribe() // etc
+   }
+
+};
+
+```
+
+You can however define functions in your store that care of all of the logic for navigating the state and getting the data your are looking for. These can be imported and used to select data specifically from your store. Your component can then store the observables and use asynch in your components to handle changes to the state reactively.
+
+You can use a naming convention for observables that are stored on your component. Typically using the $ at the end of the variables name is a good idea.
+
+```
+import { Store } from '@ngrx/store'
+// other imports
+
+export class YourCustomComponent implements OnInit {
+
+   todos$: Observable<ToDo[]>
+
+   constructor(private store: Store<fromStore.ToDosState>) {
+    
+   }
+   
+   ngOnInit() {
+    this.todos$ = this.store.select>(fromStore.getAllToDos)
+   }
+
+};
+
+```
+
+Then in your HTML for the component
+
+```
+<div *ngIf="!((todos$ | asynch)?.length)">
+    These are currently no to do items
+</div>
+<to-do-item *ngFor="let todo of (todos$ | asynch)" [todo]="todo"></to-do-item>
+```
+
+This observables and asynch approach makes your components implement a reactive architecture.
+
+#### What is NgRX Effects?
+
+Official docuentation https://ngrx.io/guide/effects
+
+#### Personal lessons from implementing state management with NgRX
+
+- State Management with Angular requires a lot of extra code. This can be generated automatically though with the CLI once NgRX schematics have been added to your project https://ngrx.io/guide/schematics . It's even better using NX https://nrwl.io/nx/guide-setting-up-ngrx
+- Implement container components for each feature (these are basically the top most parent components for each module).
+- Hook up your router to the state
+- Make both your routing and store actions resource based (from the API down to the store for consistency, bespoke functionality can be implemented at the component level).
+- Keep your stores inside of the relevant modules only. This will allow you to keep your feature implementations modular.
 
 # Progressive Web Applications
 
