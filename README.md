@@ -40,6 +40,8 @@ Markdown reference https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsh
 
 # HTML (Hyper-Text Markup Language)
 
+Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.
+
 - W3C Specification https://www.w3.org/TR/html52/
 
 ## HTML5 API
@@ -52,7 +54,9 @@ HTML 5 API Overview (Handy reference) https://platform.html5.org/
 
 https://github.com/raphamorim/awesome-canvas#readme - Curated resource for working with the HTML 5 Canvas Element
 
-# CSS (Cascasding Stylesheet)
+# CSS (Cascading Style Sheets)
+
+Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
 
 - W3C Specifications https://www.w3.org/Style/CSS/specs.en.html
 
@@ -84,6 +88,8 @@ Conditional CSS Support Checks  https://www.lottejackson.com/learning/supports-w
 
 ## Javascript
 
+Javascript from scratch https://javascript.info/
+
 #### Promises
 
 https://github.com/wbinnssmith/awesome-promises#readme
@@ -106,6 +112,8 @@ Extensible Markup Language is a markup language that defines a set of rules for 
 
 A list of popular XML Schemas used on the web https://en.wikipedia.org/wiki/List_of_types_of_XML_schemas
 
+In my opinion the best and most concise article on XML https://www.service-architecture.com/articles/xml/index.html
+
 # Fonts / Typography on the Web
 
 Mozilla Web Fonts Guide https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
@@ -125,13 +133,19 @@ https://kinsta.com/blog/optimize-images-for-web/ - How to opimize images for the
 
 ## PNG
 
+PNG (pronounced ping as in ping-pong; for Portable Network Graphics) is a file format for image compression that, in time, is expected to replace the Graphics Interchange Format (GIF) that is widely used on today's Internet.
+
 TBW
 
 ## JPEG, JPG
 
+JPEG is a commonly used method of lossy compression for digital images, particularly for those images produced by digital photography. The degree of compression can be adjusted, allowing a selectable tradeoff between storage size and image quality.
+
 TBW
 
 ## SVG
+
+Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999. SVG images and their behaviors are defined in XML text files.
 
 https://github.com/willianjusten/awesome-svg#readme - Curated resources on SVG images for the web.
 
@@ -351,7 +365,8 @@ Scientamobile - https://www.scientiamobile.com/
 
 ## Apache
 
-TBW
+Official documentation https://httpd.apache.org/docs/current/
+.htcaccess file configuration https://httpd.apache.org/docs/current/howto/htaccess.html
 
 ## Nginx
 
@@ -360,7 +375,8 @@ Third party modules https://www.nginx.com/resources/wiki/modules/
 
 ## IIS
 
-TBW
+Official website https://www.iis.net/overview
+Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-iis-10-version-1709/new-features-introduced-in-iis-10-1709
 
 ## Software Architecture
 - [10 common architectural patterns](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013) - 10 Common software architectural patterns in a nutshell.
@@ -425,6 +441,12 @@ TBW
 Much more to come here.
 
 ## Popular Node.js Packages and Libraries
+
+#### NPX
+
+NPX is great. It simplifies how you can run node package binaries inside your project.
+
+https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner - An introduction
 
 #### Express.js
 
@@ -499,9 +521,14 @@ https://www.tutorialspoint.com/angular6 - A useful overview of coure Angular con
 
 ## Other concepts
 
-Angular Interceptors
+#### Angular Interceptors
 
-more to come here..
+Angular HTTP Interceptors are useful for modifying network requests and responses as they are send and received.
+
+This can be particularly useful for authentication when an authorization token needs to be added to the headers
+of a request sent to an API.
+
+Official documentation https://angular.io/guide/http#intercepting-requests-and-responses
 
 ## Useful Angular Packages
 
@@ -641,8 +668,6 @@ You can download the extension here http://extension.remotedev.io/
 This allows us to integrate our router state to the redux store in our application which is quite useful for even more debugging with
 our dev tools. It also makes our application more reactive.
 
-TBW
-
 ** I will be providing a link here to my own reference Angular application with state management **
 
 #### My own lessons from implementing state management with NgRX
@@ -656,16 +681,131 @@ TBW
 
 ## Angular Module / Folder Organisation Best Practices
 
+This is a controversial topic depending on which developers / teams and organisations you ask.
+
+I've personally learned over time that as long as the structure is modular, maintainable and as intuitive as possible for everyone then
+that's the best compromise.
+
+More on this to come..
+
 ## Angular Unit Testing
 
-JEST
-KARMA
+#### Karma
+
+Official documentation https://karma-runner.github.io/latest/index.html
+
+Karma comes with Angular for your unit tests by default and many coverage and reporting tools are available.
+
+You can also choose to run your unit tests with ChromeHeadless to avoid spinning up a new browser window every time.
+
+#### JEST
+
+Official documentation https://jestjs.io/docs/en/getting-started
+
+Replacing the default karma unit test suite wih Jest can result in many benefits for your application.
+
+https://www.xfive.co/blog/testing-angular-faster-jest/
+
+- Faster (does not require a browser to run the tests)
+- Easier to debug as the error messages are less verbose
+- The browser is mocked and the tests run in JSDOM instead (much, much faster!)
 
 ## Angular End to End Testing
 
-BDD
-Cucumber
-Protractor
+#### Protractor
+
+#### BDD Testing with Protractor and Cucumber
+
+Behaviour-Driven Development (BDD) is a collaborative approach to software development that bridges the communication gap between business and IT. BDD helps teams communicate requirements with more precision, discover defects early and produce software that remains maintainable over time.
+
+TBW
+
+## Angular Documentation Tools
+
+#### Compodoc
+
+https://compodoc.app/ - Excellent Angular project documentation tool
+
+#### Source map explorer
+
+To use source-map-explorer, first install it globally using your favorite package manager:
+
+```
+npm install -g source-map-explorer
+```
+
+````
+yarn global add source-map-explorer
+````
+And then build your angular application with –source-map flag set to true:
+
+````
+ng build --source-map=true --prod
+````
+
+And finally run it on one or more of your generated bundles. For instance, main bundle:
+
+````
+npx source-map-explorer dist/main.xxx.bundle.js
+````
+
+https://www.youtube.com/watch?v=7aY9BoMEpG8 - Video from Google developers
+
+###### Webpack Bundle Analyzer
+
+The Angular CLI uses webpack in the background to build your application.
+
+You can analyze the static files in your build for a breakdown of exactly what dependencies you have included.
+
+![](https://i2.wp.com/theinfogrid.com/wp-content/uploads/2018/09/93f72404-b338-11e6-92d4-9a365550a701.gif?zoom=1.25&resize=848%2C510)
+
+To get started with this tool, install is a dev dependency in your project using your favorite package manager:
+
+```
+npm i webpack-bundle-analyzer --save-dev
+```
+
+```
+yarn add webpack-bundle-analyzer –dev
+```
+
+Then, build your application with –stats-json flag:
+
+```
+ng build --prod --stats-json
+```
+
+And finally, run Webpack Bundle Analyzer against the generated stats.json file located under dist/app-name for angular 6, and dist for angular 5 and below:
+
+```
+npx webpack-bundle-analyzer dist/APP-NAME/stats.json
+```
+
+Your app name can be found inside your angular.json configuration file.
+
+###### TSLint
+
+You can use this to monitor the code quality of the typescript in your application.
+
+It is highly custmizable with it's set of rules and you can even use other organisation's code standards.
+
+For more information visit the official website https://palantir.github.io/tslint/
+
+## Angular Reporting Tools
+
+#### Code Coverage Reporting Tools
+
+###### Istanbul
+
+A fantastic code coverage reporting tool. Official documentation can be found here https://istanbul.js.org/
+
+#### E2E Test Reporting Tools
+
+###### Protractor HTML Reporter
+
+This is quite useful for vizualizing your E2E Test Results. It can also display screenshots for debugging.
+
+https://github.com/etxebe/protractor-html-reporter
 
 # Progressive Web Applications
 
@@ -850,10 +990,6 @@ https://facebook.github.io/flux/docs/overview.html#content - Flux Architecture
 
 #### Reactive Programming
 
-#### Separation of concerns
-
-#### Modularity of Code 
-
 #### Unit Testing
 
 #### Load Testing
@@ -868,12 +1004,190 @@ https://facebook.github.io/flux/docs/overview.html#content - Flux Architecture
 
 #### SOLID Principles
 
-#### Cross Browser Testing
-      
+#### Cross Browser Testing    
   
 # Databases
 
-## Concepts
+## Database Types
+
+#### SQL / RDBMS / Relational databases
+
+RDBMS are more widely known and understood than their NoSQL cousins. Relational databases emerged in the 70’s to store data according to a schema that allows data to be displayed as tables with rows and columns. Think of a relational database as a collection of tables, each with a schema that represents the fixed attributes and data types that the items in the table will have. RDBMS all provide functionality for reading, creating, updating, and deleting data, typically by means of Structured Query Language (SQL) statements.
+
+The tables in a relational database have keys associated with them, which are used to identify specific columns or rows of a table and facilitate faster access to a particular table, row, or column of interest.
+
+Data integrity is of particular concern in relational databases, and RDBMS use a number of constraints to ensure that the data contained in your tables is reliable and accurate.
+
+While there are many relational databases, over time these have become the most popular:
+
+- Oracle - Oracle Database (commonly referred to as Oracle RDBMS or simply as Oracle) is a multi-model database management system produced and marketed by Oracle Corporation.
+- MySQL - MySQL is an open source RDBMS based on Structured Query Language (SQL). MySQL runs on virtually all platforms, including Linux, UNIX, and Windows.
+- Microsoft SQL Server - Microsoft SQL Server is an RDBMS, that supports a wide variety of transaction processing, business intelligence and analytics applications in corporate IT environments.
+- PostgreSQL - PostgreSQL, often simply Postgres, is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance.
+- DB2 - DB2 is an RDBMS designed to store, analyze and retrieve data efficiently.
+
+###### Advantages
+
+- Relational databases are well-documented and mature technologies, and RDBMS are sold and maintained by a number of established corporations.
+- SQL standards are well-defined and commonly accepted.
+- A large pool of qualified developers have experience with SQL and RDBMS.
+- All RDBMS are ACID-compliant, meaning they satisfy the requirements of Atomicity, Consistency, Isolation, and Durability.
+
+###### Disadvantages
+
+- RDBMSes don’t work well — or at all — with unstructured or semi-structured data, due to schema and type constraints. This makes them ill-suited for large analytics or IoT event loads.
+- The tables in your relational database will not necessarily map one-to-one with an object or class representing the same data.
+- When migrating one RDBMS to another, schemas and types must generally be identical between source and destination tables for migration to work (schema constraint). For many of the same reasons, extremely complex datasets or those containing variable-length records are generally difficult to handle with an RDBMS schema.
+
+#### NoSQL / Non-relational databases
+
+NoSQL databases emerged as a popular alternative to relational databases as web applications became increasingly complex. NoSQL/Non-relational databases can take a variety of forms. However, the critical difference between NoSQL and relational databases is that RDBMS schemas rigidly define how all data inserted into the database must be typed and composed, whereas NoSQL databases can be schema agnostic, allowing unstructured and semi-structured data to be stored and manipulated.
+
+###### Types
+
+Note that some products may fall into more than one category. For example, Couchbase is both a document database and a key-value store.
+
+######## Key-Value Stores
+
+Key-Value Stores, such as Redis and Amazon DynamoDB, are extremely simple database management systems that store only key-value pairs and provide basic functionality for retrieving the value associated with a known key.
+
+The simplicity of key-value stores makes these database management systems particularly well-suited to embedded databases, where the stored data is not particularly complex and speed is of paramount importance.
+
+######## Wide-Column Stores
+
+Wide Column Stores, such as Cassandra, Scylla, and HBase, are schema-agnostic systems that enable users to store data in column families or tables, a single row of which can be thought of as a record — a multi-dimensional key-value store.
+
+These solutions are designed with the goal of scaling well enough to manage petabytes of data across as many as thousands of commodity servers in a massive, distributed system.
+
+Although technically schema-free, wide column stores like Scylla and Cassandra use an SQL variant called CQL for data definition and manipulation, making them straightforward to those already familiar with RDBMS.
+
+######## Document Stores
+
+Document Stores, including MongoDB and Couchbase, are schema-free systems that store data in the form of JSON documents. Document stores are similar to key-value or wide column stores, but the document name is the key and the contents of the document, whatever they are, are the value.
+
+In a document store, individual records do not require a uniform structure, can contain many different value types, and can be nested. This flexibility makes them particularly well-suited to manage semi-structured data across distributed systems.
+
+######## Graph Databases
+
+Graph Databases, such as Neo4J and Datastax Enterprise Graph, represent data as a network of related nodes or objects in order to facilitate data visualizations and graph analytics.
+
+A node or object in a graph database contains free-form data that is connected by relationships and grouped according to labels. Graph-Oriented Database Management Systems (DBMS) software is designed with an emphasis on illustrating connections between data points.
+
+As a result, graph databases are typically used when analysis of the relationships between heterogeneous data points is the end goal of the system, such as in fraud prevention, advanced enterprise operations, or Facebook’s original friends graph.
+
+######## Search Engines
+
+Search Engines, such as Elasticsearch, Splunk, and Solr, store data using schema-free JSON documents. They are similar to document stores, but with a greater emphasis on making your unstructured or semi-structured data easily accessible via text-based searches with strings of varying complexity.
+
+###### Advantages of NoSQL Databases
+
+Since there are so many types and varied applications of NoSQL databases, it’s hard to nail these down, but generally:
+
+- Schema-free data models are more flexible and easier to administer.
+- NoSQL databases are generally more horizontally scalable and fault-tolerant.
+- Data can easily be distributed across different nodes. To improve availability and/or partition tolerance, you can choose that data on some nodes be "eventually consistent".
+
+###### Disadvantages of NoSQL Databases
+
+These are also dependent on the database type.
+
+- NoSQL databases are generally less widely adopted and mature than RDBMS solutions, so specific expertise is often required.
+- There are a range of formats and constraints specific to each database type.
+
+Which database is right for you?
+
+![](https://www.alooma.com/img/cms/moderndb-listforblog.png)
+
+- If ACID (Atomicity, Durability, Consistency, and Durability) compliance is your first priority, consider using RDBMS.
+- If you have a massively distributed system and can settle for eventual consistency on some nodes/partitions, you might consider a wide column store such as Cassandra or Scylla.
+- If your input data is particularly heterogeneous and difficult to encapsulate according to a normalization schema, consider using a NoSQL DBMS.
+- If your goal is to scale vertically, consider an RDBMS; conversely, if you want to scale horizontally, a NoSQL DBMS may be preferable.
+
+## Database Concepts
+
+#### ACID (Atomicity, Consistency, Isolation, and Durability)
+
+ACID properties are an important concept for databases. The acronym stands for Atomicity, Consistency, Isolation, and Durability.
+
+###### Atomicity 
+
+The phrase "all or nothing" succinctly describes the first ACID property of atomicity. When an update occurs to a database, either all or none of the update becomes available to anyone beyond the user or application performing the update. This update to the database is called a transaction and it either commits or aborts. This means that only a fragment of the update cannot be placed into the database, should a problem occur with either the hardware or the software involved. Features to consider for atomicity:
+
+a transaction is a unit of operation - either all the transaction's actions are completed or none are
+atomicity is maintained in the presence of deadlocks
+atomicity is maintained in the presence of database software failures
+atomicity is maintained in the presence of application software failures
+atomicity is maintained in the presence of CPU failures
+atomicity is maintained in the presence of disk failures
+atomicity can be turned off at the system level
+atomicity can be turned off at the session level
+
+###### Consistency
+
+Consistency is the ACID property that ensures that any changes to values in an instance are consistent with changes to other values in the same instance. A consistency constraint is a predicate on data which serves as a precondition, post-condition, and transformation condition on any transaction.
+
+###### Isolation
+
+The isolation portion of the ACID Properties is needed when there are concurrent transactions. Concurrent transactions are transactions that occur at the same time, such as shared multiple users accessing shared objects. This situation is illustrated at the top of the figure as activities occurring over time. The safeguards used by a DBMS to prevent conflicts between concurrent transactions are a concept referred to as isolation.
+
+As an example, if two people are updating the same catalog item, it's not acceptable for one person's changes to be "clobbered" when the second person saves a different set of changes. Both users should be able to work in isolation, working as though he or she is the only user. Each set of changes must be isolated from those of the other users.
+
+An important point in understanding isolation through transactions is serializability. Transactions are serializable when the effect on the database is the same whether the transactions are executed in serial order or in an interleaved fashion. The effect on the DBMS is that the transactions may execute in serial order based on consistency and isolation requirements. It is important to note that a serialized execution does not imply the first transactions will automatically be the ones that will terminate before other transactions in the serial order.
+
+######## Degrees of isolation:
+
+- degree 0 - a transaction does not overwrite data updated by another user or process ("dirty data") of other transactions
+- degree 1 - degree 0 plus a transaction does not commit any writes until it completes all its writes (until the end of transaction)
+- degree 2 - degree 1 plus a transaction does not read dirty data from other transactions
+- degree 3 - degree 2 plus other transactions do not dirty data read by a transaction before the transaction commits
+
+###### Durability 
+
+Maintaining updates of committed transactions is critical. These updates must never be lost. The ACID property of durability addresses this need. Durability refers to the ability of the system to recover committed transaction updates if either the system or the storage media fails. 
+
+######## Features to consider for durability:
+
+- recovery to the most recent successful commit after a database software failure
+- recovery to the most recent successful commit after an application software failure
+- recovery to the most recent successful commit after a CPU failure
+- recovery to the most recent successful backup after a disk failure
+- recovery to the most recent successful commit after a data disk failure 
+
+## Concurrency and Locking
+
+Concurrency control and locking is the mechanism used by DBMSs for the sharing of data. Atomicity, consistency, and isolation are achieved through concurrency control and locking.
+
+While many people may be reading the same data item at the same time, it is usually necessary to ensure that only one application at a time can change a data item. Locking is a way to do this. Because of locking, all changes to a particular data item will be made in the correct order in a transaction.
+
+The amount of data that can be locked with the single instance or groups of instances defines the granularity of the lock. 
+
+#### Granularity Types
+
+- Page Locking
+- Cluster Locking
+- Class or Table Locking
+- Object or Instance Locking
+
+#### Page locking
+
+Page locking (or page-level locking) concurrency control involves all the data on a specific page being locked. A page is a common unit of storage in computer systems and is used by all types of DBMSs. Locking for objects is on the left and page locking for relational tuples is on the right. If the concept of pages is new to you, just think of a page as a unit of space on the disk where multiple data instances are stored.
+
+#### Cluster locking
+
+Cluster locking or container locking for concurrency control means all data clustered together (on a page or multiple pages) will be locked simultaneously. This applies only to clusters of objects in ODBMSs (Object database management systems).
+
+#### Class or Table Locking
+
+Class or table locking means that all instances of either a class or table are locked.
+
+#### Object or Instance Locking
+
+Instance locking locks a single relational tuple in an RDBMS or a single object in an ODBMS
+
+
+## Database Normalisation
+
+TBW
 
 ## MySQL
 
