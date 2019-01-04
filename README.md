@@ -508,6 +508,7 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 # Angular
 
 - Official Angular Documentation https://angular.io/docs
+- Awesome Angular https://github.com/gdi2290/awesome-angular
 - NX (Nrwl extensions for Angular) https://nrwl.io/nx (Build out your Enterprise Angular applications for modularity and with a smarter Angular CLI. I highly recommend this).
 - Angular Console https://angularconsole.com/ (GUI for the Angular CLI, good for getting further context on many commonly run commands).
 - Hot Module Replacement with Angular - https://medium.com/wizardnet972/hot-module-replacement-with-angular-cli-5fc7a3ae4a9c
@@ -530,9 +531,18 @@ of a request sent to an API.
 
 Official documentation https://angular.io/guide/http#intercepting-requests-and-responses
 
-## Useful Angular Packages
+## Useful Angular Packages and Modules
 
 - https://github.com/atularen/ngx-monaco-editor (Browser-based code editor for Microsoft. Angular component.)
+- https://manfredsteyer.github.io/angular-oauth2-oidc/docs/ - Excellent module for providing OAuth Authentication.
+- https://hackafro.github.io/angular-epic-spinners/ - Spinner Components
+- https://valor-software.com/ngx-bootstrap/#/ - Ngx Bootstrap - Angular 4 Bootstrap components.
+- https://valor-software.com/ng2-dragula/ - Drag and drop components
+- https://github.com/evanplaice/ng2-markdown - Markdown component
+- https://valor-software.com/ng2-file-upload/ - File upload components
+- https://github.com/travelist/angular2-fontawesome - Angular components for font awesome (not really needed as font awesome is easy).
+- https://github.com/VadimDez/ng2-pdf-viewer - PDF viewer components
+- https://github.com/vladotesanovic/ngSemantic - Semantic UI CSS Framework ported to Angular components
 
 ## Architecting your Angular applications with Nx (Highly recommended)
 
