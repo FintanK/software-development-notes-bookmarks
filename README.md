@@ -361,6 +361,17 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 - Deploying Angular Applications to a serverless environment https://medium.com/@maciejtreder/angular-serverless-a713e86ea07a
 - Angular Universal (Server Side Rendering) https://angular.io/guide/universal
 
+## Learning resources
+
+https://ultimatecourses.com/angular - My most recommended course.
+https://www.tutorialspoint.com/angular6 - A useful overview of coure Angular concepts.
+
+## Other concepts
+
+Angular Interceptors
+
+more to come here..
+
 ## Useful Angular Packages
 
 - https://github.com/atularen/ngx-monaco-editor (Browser-based code editor for Microsoft. Angular component.)
