@@ -864,11 +864,15 @@ https://www.blueprintsys.com/agile-development-101/agile-methodologies - A guide
 
 #### JSON Web Tokens (JWT) for Authentication
 
-TBW
+JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA or ECDSA.
+
+https://jwt.io/
 
 #### OAuth
 
-TBW
+OAuth 2.0 is the industry-standard protocol for authorization. OAuth 2.0 supersedes the work done on the original OAuth protocol created in 2006. OAuth 2.0 focuses on client developer simplicity while providing specific authorization flows for web applications, desktop applications, mobile phones, and living room devices. This specification and its extensions are being developed within the IETF OAuth Working Group.
+
+https://oauth.net/2/
 
 ## Documentation
 
@@ -904,7 +908,9 @@ Azure devops (Will succeed Nuget private servers) https://azure.microsoft.com/en
   
 # Blockchain Development
 
-The blockchain is a promising technology that has progressed at an ever increasing rate. It is now used in most industries to improve trust and transparency as well as provide an immutable record of distributed data. Many people have heard of bitcoin but distributed ledger technology provides potentially more valuable technologies.
+The blockchain is now used in most industries to improve trust and transparency as well as provide an immutable record of distributed data. 
+
+Many people have heard of bitcoin but distributed ledger technology provides potentially more valuable technologies.
 
 - Peer to peer cash (Everyone becomes their own bank)
 - Programmable money and universal cash without government inflation.
