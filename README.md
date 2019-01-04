@@ -1,8 +1,8 @@
-# :bookmark_tabs: :books: :ledger: Software Development Bookmarks (Work In Progress)
+# :bookmark_tabs: :books: :ledger: Software Development Bookmarks
 
-This markdown file attempts to provide many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
+This markdown file (which is most certainly a work in progress right now ) attempts to help me revise many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
-# Links
+# Some of my favourite websites
 
 https://github.com/dypsilon/frontend-dev-bookmarks - Frontend development bookmarks
 https://developer.mozilla.org/en-US/docs/Web - Mozilla Developer Network
