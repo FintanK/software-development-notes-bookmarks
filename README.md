@@ -14,6 +14,8 @@ https://www.toptal.com/developers/blog - Toptal
 # Developer Blogs
 
 https://flaviocopes.com/ - Flavio Copes (Frontend development).
+https://toddmotto.com/ - Todd Motto (Angular).
+https://johnpapa.net/ - John Papa
 
 # Markdown
 
@@ -67,6 +69,129 @@ Web Fonts Guide https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/
 # Images on the Web
 
 TBW
+
+# State Management for Web Applications
+
+Just like the server, the browser can have different types of states to manage...
+
+- Server Response Data
+- User information
+- User Input
+- UI State
+- Router / location state
+
+State Management Libraries
+
+- Model our app state
+- Update the state
+- Read state values
+- Monitor changs to the state
+
+## The Redux Design Pattern / Architecture
+
+The three principles of Redux.
+
+- Single source of truth.
+- State is read-only.
+- Pure functions update the state
+
+One of the biggest benefits of using state management is that the duplicate dependency injection of data services
+can be moved out from the components to the state management library implementation.
+
+In Universal (Server side rendered) Angular apps you can prepopulate the store on page load and avoid the many HTTP many requests needed for this logic with an SPA (Single Page Application).
+
+Great developer tools including time travel debugging.
+
+Easier testing of how data retrieved in the client application is used.
+
+Because the state is read only, our components just have to **react** to state changes. Our components role when using state management is to subscribe to the store and respond appropriately.
+
+#### Redux Core Concepts
+
+###### Single state tree
+
+A single state tree is a single Javascript object. It is composed / built up using reducers.
+
+It has an initial state. When the application loads.
+
+**An example state**
+
+```
+const state = {
+    todos: []
+};
+```
+
+###### Actions
+
+Actions have two properties
+
+- Type (usually a string, describing the action).
+- Payload (this is optional)
+
+These are dispatched by components in order to update the application state but do not update the state themselves. This gives us an "immutable update pattern" which basically means that we clearly define how data is updated in our client applications.
+
+```
+const action = {
+    type: 'ADD_TO_DO',
+    payload: {
+      label: 'Go for a jog',
+      complete: false
+    }
+};
+```
+
+###### Reducers
+
+These are pure functions (taken from the functional programming methodology) that update the application state. Given the same input they will always have the same output. They don't modify any data outside of their functional scope. This output is typically an updated application state.
+
+This is a pure function. It does not mutate any data outside of it's own scope.
+
+```
+function reducer(state, action) {
+    switch(action.type) {
+       case: 'ADD_TO_DO': {
+        const todo = action.payload;
+        const todos = [...state.todos, todo],
+        return [ todos]; // Update the state and pass back
+       }
+    }  
+    return state; // Return the passed state by default
+}
+```
+
+This would result in the state being updated
+
+```
+const state = {
+    todos: [
+      { labelL 'Go for a jog', complete: false }
+    ]
+};
+```
+
+###### Store
+
+- The state container. Injected into components that need it.
+- Components use the store to dispatch events
+- Components use the store to subscribe to state updates.
+- Handles responsibility of invoking reducers.
+
+###### One-way data flow.
+
+![One way data flow in redux](http://www.mrscottmcallister.com/assets/img/redux-flow.png)
+
+###### Immutability
+
+"An immutable object is an object that cannot be modified after creation."
+
+Why would we make an object immutable?
+
+- Predictability
+- Explicit State Changes
+- Performance
+- Mutation Tracking
+- Undoing state changes
 
 # Semantic Web Applications
 
@@ -227,7 +352,7 @@ TSLint https://palantir.github.io/tslint/
 TSLint formatters https://palantir.github.io/tslint/formatters/
 AirBNB TSLint (Just extend this in your TSLint configuration to use it in your project, you can override and customize these settings) https://www.npmjs.com/package/tslint-config-airbnb
 
-# Angular 2+
+# Angular
 
 - Official Angular Documentation https://angular.io/docs
 - NX (Nrwl extensions for Angular) https://nrwl.io/nx (Build out your Enterprise Angular applications for modularity and with a smarter Angular CLI. I highly recommend this).
@@ -236,7 +361,7 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 - Deploying Angular Applications to a serverless environment https://medium.com/@maciejtreder/angular-serverless-a713e86ea07a
 - Angular Universal (Server Side Rendering) https://angular.io/guide/universal
 
-## Useful Angular 2+ Packages
+## Useful Angular Packages
 
 - https://github.com/atularen/ngx-monaco-editor (Browser-based code editor for Microsoft. Angular component.)
 
@@ -255,137 +380,15 @@ UpgradeModule and dowgradeModule helpers
 
 Find out more at https://nrwl.io/nx/overview
 
-# State Management for Web Applications
-
-Just like the server, the browser can have different types of states to manage...
-
-- Server Response Data
-- User information
-- User Input
-- UI State
-- Router / location state
-
-State Management Libraries
-
-- Model our app state
-- Update the state
-- Read state values
-- Monitor changs to the state
-
-## The Redux Design Pattern / Architecture
-
-The three principles of Redux.
-
-- Single source of truth.
-- State is read-only.
-- Pure functions update the state
-
-One of the biggest benefits of using state management is that the duplicate dependency injection of data services
-can be moved out from the components to the state management library implementation.
-
-In Universal (Server side rendered) Angular apps you can prepopulate the store on page load and avoid the many HTTP many requests needed for this logic with an SPA (Single Page Application).
-
-Great developer tools including time travel debugging.
-
-Easier testing of how data retrieved in the client application is used.
-
-Because the state is read only, our components just have to **react** to state changes. Our components role when using state management is to subscribe to the store and respond appropriately.
-
-**Reducers** 
-
-#### Redux Core Concepts
-
-###### Single state tree
-
-A single state tree is a single Javascript object. It is composed / built up using reducers.
-
-It has an initial state. When the application loads.
-
-**An example state**
-
-```
-const state = {
-    todos: []
-};
-```
-
-###### Actions
-
-Actions have two properties
-
-- Type (usually a string, describing the action).
-- Payload (this is optional)
-
-These are dispatched by components in order to update the application state but do not update the state themselves. This gives us an "immutable update pattern" which basically means that we clearly define how data is updated in our client applications.
-
-```
-const action = {
-    type: 'ADD_TO_DO',
-    payload: {
-      label: 'Go for a jog',
-      complete: false
-    }
-};
-```
-
-###### Reducers
-
-These are pure functions (taken from the functional programming methodology) that update the application state. Given the same input they will always have the same output. They don't modify any data outside of their functional scope. This output is typically an updated application state.
-
-This is a pure function. It does not mutate any data outside of it's own scope.
-
-```
-function reducer(state, action) {
-    switch(action.type) {
-       case: 'ADD_TO_DO': {
-        const todo = action.payload;
-        const todos = [...state.todos, todo],
-        return [ todos]; // Update the state and pass back
-       }
-    }  
-    return state; // Return the passed state by default
-}
-```
-
-This would result in the state being updated
-
-```
-const state = {
-    todos: [
-      { labelL 'Go for a jog', complete: false }
-    ]
-};
-```
-
-###### Store
-
-- The state container. Injected into components that need it.
-- Components use the store to dispatch events
-- Components use the store to subscribe to state updates.
-- Handles responsibility of invoking reducers.
-
-###### One-way data flow.
-
-![One way data flow in redux](http://www.mrscottmcallister.com/assets/img/redux-flow.png)
-
-###### Immutability
-
-"An immutable object is an object that cannot be modified after creation."
-
-Why would we make an object immutable?
-
-- Predictability
-- Explicit State Changes
-- Performance
-- Mutation Tracking
-- Undoing state changes
-
 ## State Management with NgRX for Angular.
 
-NgRX is made up of NgRX Store and Effects.
+NgRX at it's core is made up of NgRX Store and Effects. It utilizes the popular Rx.js library and it's observable design pattern to
+provide a Redux architecture for state management in Angular.
 
 NgRX Store on Github https://github.com/ngrx/store
 NgRx Effects https://github.com/ngrx/effects
+
+There are other libraries than can be used with NgRX but they are optional.
 
 #### What is NgRX Store?
 
@@ -459,17 +462,70 @@ Then in your HTML for the component
 
 This observables and asynch approach makes your components implement a reactive architecture.
 
-#### What is NgRX Effects?
+#### What are NgRX Effects?
 
-Official docuentation https://ngrx.io/guide/effects
+Official doccuentation https://ngrx.io/guide/effects
 
-#### Personal lessons from implementing state management with NgRX
+- Listen for ngrx/store actions that are dispatched
+- Isolate side effects from components
+- Communicate outside of Angular (Handle API calls, websockets etc)
+
+![NgRX Effects Flow](https://cdn-images-1.medium.com/max/1600/1*vSadxKWVoAirhVCa8fxiNw.png)
+
+Because reducers are pure functions these are not ideal places to put API calls
+
+If an effect fetches data from an external source then it will dispatch an action of it's own with a reducer handling it and updating the state
+
+Effects don't perform service calls themselves. They will typically offload that work to an Angular service.
+
+###### Optimizing data structures with Entities
+
+In our reducers we can make how we index our data more efficient so that we can use our redux dev tools to easily view and navigate our state
+
+#### Redux Dev Tools - Highly recommended
+
+This will allow you see every single action and state change in your app. 
+
+It really showcases how reactive your application is when built using the redux pattern.
+
+You can also step back in time to an older state to debug issues with your application by dragging the slider.
+
+It will also visualize your state tree in an easy to understand way if you index your data with the entities approach outlined above.
+
+You can download the extension here http://extension.remotedev.io/
+
+#### Setting up NgRX Router Store
+
+This allows us to integrate our router state to the redux store in our application which is quite useful for even more debugging with
+our dev tools. It also makes our application more reactive.
+
+TBW
+
+** I will be providing a link here to my own reference Angular application with state management **
+
+
+#### My own lessons from implementing state management with NgRX
 
 - State Management with Angular requires a lot of extra code. This can be generated automatically though with the CLI once NgRX schematics have been added to your project https://ngrx.io/guide/schematics . It's even better using NX https://nrwl.io/nx/guide-setting-up-ngrx
 - Implement container components for each feature (these are basically the top most parent components for each module).
 - Hook up your router to the state
 - Make both your routing and store actions resource based (from the API down to the store for consistency, bespoke functionality can be implemented at the component level).
 - Keep your stores inside of the relevant modules only. This will allow you to keep your feature implementations modular.
+- Optimize your folder structure with index.ts files wherever possible to avoid too many imports.
+
+## Angular Module / Folder Organisation Best Practices
+
+## Angular Unit Testing
+
+JEST
+KARMA
+
+## Angular End to End Testing
+
+BDD
+Cucumber
+Protractor
+
 
 # Progressive Web Applications
 
