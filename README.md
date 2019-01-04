@@ -4,19 +4,34 @@ This markdown file (which is most certainly a work in progress right now ) attem
 
 # Some of my favourite websites
 
-https://github.com/dypsilon/frontend-dev-bookmarks - Frontend development bookmarks
-https://developer.mozilla.org/en-US/docs/Web - Mozilla Developer Network
-http://www.tutorialspoint.com/ - Tutorialspoint
-https://www.smashingmagazine.com/ - Smashing Magazine
-https://tympanus.net/codrops/ - Tympanus Codrops
-https://www.toptal.com/developers/blog - Toptal
+- https://github.com/dypsilon/frontend-dev-bookmarks - Frontend development bookmarks
+- https://developer.mozilla.org/en-US/docs/Web - Mozilla Developer Network
+- http://www.tutorialspoint.com/ - Tutorialspoint
+- https://www.smashingmagazine.com/ - Smashing Magazine
+- https://tympanus.net/codrops/ - Tympanus Codrops
+- https://www.toptal.com/developers/blog - Toptal
 
 # Developer Blogs
 
-https://flaviocopes.com/ - Flavio Copes (Frontend development).
-https://toddmotto.com/ - Todd Motto (Angular).
-https://johnpapa.net/ - John Papa
-https://angular-university.io/my-courses - Angular University
+- https://flaviocopes.com/ - Flavio Copes (Frontend development).
+- https://toddmotto.com/ - Todd Motto (Angular).
+- https://johnpapa.net/ - John Papa
+- https://angular-university.io/my-courses - Angular University
+
+# Organisations
+
+- W3C https://www.w3.org/
+- IEEE https://www.ieee.org/
+- IETF https://www.ietf.org/ , 
+
+# Protocols and Standards
+
+- HTTP 2 Guide https://httpd.apache.org/docs/trunk/howto/http2.html
+- OSI Model https://www.webopedia.com/quick_ref/OSI_Layers.asp
+- IETF Standards and Guidelines https://wordtothewise.com/wisewords/internet-protocols-standards/
+- FTP
+- SMTP – Simple Mail Transfer Protocol
+- MIME – Multimedia Internet Email Extensions
 
 # Markdown
 
@@ -29,6 +44,12 @@ Markdown reference https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsh
 ## HTML5 API
 
 HTML 5 API Overview (Handy reference) https://platform.html5.org/
+
+#### Canvas
+
+"Added in HTML5, the HTML element can be used to draw graphics via scripting in JavaScript. For example, it can be used to draw graphs, make photo compositions, create animations or even do real-time video processing or rendering." by Mozilla Developer Network
+
+https://github.com/raphamorim/awesome-canvas#readme - Curated resource for working with the HTML 5 Canvas Element
 
 # CSS (Cascasding Stylesheet)
 
@@ -84,13 +105,34 @@ Extensible Markup Language is a markup language that defines a set of rules for 
 
 A list of popular XML Schemas used on the web https://en.wikipedia.org/wiki/List_of_types_of_XML_schemas
 
-# Fonts on the Web
+# Fonts / Typography on the Web
 
-Web Fonts Guide https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
+Mozilla Web Fonts Guide https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
+https://github.com/deanhume/typography#readme - Curated list of resources for working with Web Typography
+
+# Audio for the web
+
+Mozilla Web Audio Guide https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API
+
+# Video for the web
+
+Mozilla Video Web Guide https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content#Audio_and_video_on_the_web
 
 # Images on the Web
 
 https://kinsta.com/blog/optimize-images-for-web/ - How to opimize images for the web and performance
+
+## PNG
+
+TBW
+
+## JPEG, JPG
+
+TBW
+
+## SVG
+
+https://github.com/willianjusten/awesome-svg#readme - Curated resources on SVG images for the web.
 
 ## Responsive Images
 
@@ -248,6 +290,7 @@ JSON LD (JSON Linked Data) https://json-ld.org/
 
 An introduction to web components from Mozilla https://developer.mozilla.org/en-US/docs/Web/Web_Components
 Custom Elements W3C Specification https://www.w3.org/TR/2018/NOTE-custom-elements-20180503/
+Polymer (JS Library to create web components) https://www.polymer-project.org/
 
 ## Shadow DOM
 
@@ -311,13 +354,14 @@ TBW
 
 ## Nginx
 
-TBW
+Official documentation https://nginx.org/en/docs/
+Third party modules https://www.nginx.com/resources/wiki/modules/
 
 ## IIS
 
 TBW
 
-## General Architecture
+## Software Architecture
 - [10 common architectural patterns](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013) - 10 Common software architectural patterns in a nutshell.
 - [reactive design patterns](https://www.reactivedesignpatterns.com/categories.html) - This website accompanies the book Reactive Design Patterns by Roland Kuhn.
 - [scalable System Design Patterns](https://dzone.com/articles/scalable-system-design) - Scalable system design techniques.
@@ -325,18 +369,18 @@ TBW
 - [system-design-primer](https://github.com/donnemartin/system-design-primer) - Design large-scale systems.
 - [architecting-for-reliability](https://medium.com/becloudy/architecting-for-reliability-part-1-concepts-17028343089) - Architecting for Reliability Part 1/3.
 
-## Cloud Architecture
+# Cloud Architecture
 - [AWS cloud design patterns](http://en.clouddesignpattern.org/index.php/Main_Page) - The AWS Cloud Design Patterns (CDP).
 - [Azure cloud design patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns) - Building reliable, scalable, secure applications in the cloud.
 - [cloud patterns](http://cloudpatterns.org) - A community site dedicated to documenting a master patterns catalog.
 - [cloud computing patterns](http://www.cloudcomputingpatterns.org) - Cloud Computing Patterns.
 - [Google Cloud Solutions](https://gcp.solutions) - Real business cases solutions with diagrams on GCP.
 
-## Serverless Architecture
+# Serverless Architecture
 - [serverless architecture](https://thenewstack.io/serverless-architecture-five-design-patterns) - Serverless Architecture: Five Design Patterns.
 - [solving problems in serverless](https://freecontent.manning.com/patterns-for-solving-problems-in-serverless-architectures) - Patterns for Solving Problems in Serverless Architectures.
 
-## Micro services & Distributed Systems
+# Micro services & Distributed Systems
 - [microservice patterns](http://microservicepatterns.org) - A community site dedicated to documenting a master patterns catalog.
 - [microservices](http://microservices.io/patterns) - A pattern language for microservices.
 - [microservices-anti patterns](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls) - Microservices antipatterns and pitfalls.
@@ -345,7 +389,7 @@ TBW
 - [message-queues](http://tech.forter.com/comparing-message-queue-architectures-on-aws) - Comparing-message-queue-architectures.
 - [enterprise Integration Patterns](http://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html) - Patterns and Best Practices for Enterprise Integration.
 
-## Docker and DevOps
+# Docker and DevOps
 - [containerspatterns](https://l0rd.github.io/containerspatterns) - There are a Thousand Ways to Use Containers.
 - [container-anti-patterns](http://blog.arungupta.me/docker-container-anti-patterns) - 10 containers anti-patterns.
 - [kubernetes](https://github.com/gravitational/workshop/blob/master/k8sprod.md) - Kubernetes Production Patterns.
@@ -353,7 +397,7 @@ TBW
 - [pattern-and-anti-pattern-cicd](https://www.gronau-it-cloud-computing.de/pattern-and-anti-pattern-cicd) - Pattern and anti-pattern cicd.
 - [best-practices-for-shell-scripts](https://stackoverflow.com/questions/78497/design-patterns-or-best-practices-for-shell-scripts) - Best practices for shell scripts.
 
-## Security
+# Security
 - [opensecurityarchitecture](http://www.opensecurityarchitecture.org/cms/library/patternlandscape) - Security Architecture Patterns.
 - [martinfowler](https://www.martinfowler.com/articles/web-security-basics.html) - Web-security-basics.
 - [cloud-security](https://www.infoq.com/articles/cloud-security-architecture-intro) - Cloud security architecture intro.
@@ -722,7 +766,7 @@ This can be as simple as having a development, QA, UAT and production server but
     
 ## Environment variables: Why and how.
 
-
+TBW
     
 ## Safely injecting and encrypting API keys
     
