@@ -16,6 +16,7 @@ https://www.toptal.com/developers/blog - Toptal
 https://flaviocopes.com/ - Flavio Copes (Frontend development).
 https://toddmotto.com/ - Todd Motto (Angular).
 https://johnpapa.net/ - John Papa
+https://angular-university.io/my-courses - Angular University
 
 # Markdown
 
@@ -65,7 +66,6 @@ A list of popular XML Schemas used on the web https://en.wikipedia.org/wiki/List
 
 Web Fonts Guide https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
 
-
 # Images on the Web
 
 TBW
@@ -74,11 +74,9 @@ TBW
 
 ## Responsive Images
 
-
 # Bandwidth Optimization for Web Applications
 
 TBW
-
 
 # State Management for Web Applications
 
@@ -249,14 +247,12 @@ Whilst these frameworks might not follow the official W3C outlines for web compo
 
 Media Queries
 
-
 ## Client Side Detection
 
 #### Browser User Agent
 
 - Check your browser user agent https://www.whatismybrowser.com/detect/what-is-my-user-agent
 - Mozilla Developer Network - Browser detection using the user agent https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent
-
 
 #### Polyfills
 
@@ -284,6 +280,20 @@ Scientamobile - https://www.scientiamobile.com/
 -   VSCode
 -   WebStorm
 -   IntelliJ IDEA
+
+# Web Servers
+
+## Apache
+
+TBW
+
+## Nginx
+
+TBW
+
+## IIS
+
+TBW
 
 # Node.js
 
@@ -345,6 +355,7 @@ Purely functional Javascript utility Library
 
 https://github.com/ramda/ramda
 
+Much more to come!
 
 # Typescript
 
@@ -524,7 +535,6 @@ TBW
 
 ** I will be providing a link here to my own reference Angular application with state management **
 
-
 #### My own lessons from implementing state management with NgRX
 
 - State Management with Angular requires a lot of extra code. This can be generated automatically though with the CLI once NgRX schematics have been added to your project https://ngrx.io/guide/schematics . It's even better using NX https://nrwl.io/nx/guide-setting-up-ngrx
@@ -546,7 +556,6 @@ KARMA
 BDD
 Cucumber
 Protractor
-
 
 # Progressive Web Applications
 
@@ -716,6 +725,10 @@ Incremental Development
 Reliability
 
 ## Software Engineering Concepts
+
+#### Flux Architecture
+
+https://facebook.github.io/flux/docs/overview.html#content - Flux Architecture
 
 #### DRY Principles 
 
