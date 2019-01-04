@@ -32,6 +32,7 @@ This markdown file (which is most certainly a work in progress right now ) attem
 - FTP
 - SMTP – Simple Mail Transfer Protocol
 - MIME – Multimedia Internet Email Extensions
+- SSL
 
 # Markdown
 
@@ -855,6 +856,8 @@ https://facebook.github.io/flux/docs/overview.html#content - Flux Architecture
 
 #### Unit Testing
 
+#### Load Testing
+
 #### Code Coverage
 
 #### Integration Testing
@@ -1055,4 +1058,12 @@ Ganache https://truffleframework.com/ganache
 
 https://storj.io/ - Distributed data storage with clients earning tokens for the storage they provide.
 
+
+# Virtual Reality
+
+## Virtual reality on the web
+
+https://aframe.io/ - Aframe
+WebVR Specification https://webvr.info/
+WebVR Experiments https://experiments.withgoogle.com/collection/webvr
 
