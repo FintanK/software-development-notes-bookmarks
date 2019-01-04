@@ -56,6 +56,28 @@ Semantic UI https://semantic-ui.com/
 
 - BEM (Block Element Modifier) http://getbem.com/introduction/
 
+## CSS Articles
+
+Conditional CSS Support Checks  https://www.lottejackson.com/learning/supports-will-change-your-life
+
+## Javascript
+
+#### Promises
+
+https://github.com/wbinnssmith/awesome-promises#readme
+
+#### Standard Tools
+
+https://github.com/standard/awesome-standard#readme
+
+#### Workflow
+
+https://github.com/maxogden/maintenance-modules#readme
+
+#### Observables
+
+https://github.com/sindresorhus/awesome-observables#readme
+
 # XML (Extensible Markup Language)
 
 Extensible Markup Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. The W3C's XML 1.0 Specification and several other related specifications—all of them free open standards—define XML
@@ -68,11 +90,11 @@ Web Fonts Guide https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/
 
 # Images on the Web
 
-TBW
-
-## Image Optimization
+https://kinsta.com/blog/optimize-images-for-web/ - How to opimize images for the web and performance
 
 ## Responsive Images
+
+HTML responsive images https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
 
 # Bandwidth Optimization for Web Applications
 
@@ -294,6 +316,49 @@ TBW
 ## IIS
 
 TBW
+
+## General Architecture
+- [10 common architectural patterns](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013) - 10 Common software architectural patterns in a nutshell.
+- [reactive design patterns](https://www.reactivedesignpatterns.com/categories.html) - This website accompanies the book Reactive Design Patterns by Roland Kuhn.
+- [scalable System Design Patterns](https://dzone.com/articles/scalable-system-design) - Scalable system design techniques.
+- [martin fowler](https://martinfowler.com/eaaCatalog) - Catalog of Patterns of Enterprise Application Architecture.
+- [system-design-primer](https://github.com/donnemartin/system-design-primer) - Design large-scale systems.
+- [architecting-for-reliability](https://medium.com/becloudy/architecting-for-reliability-part-1-concepts-17028343089) - Architecting for Reliability Part 1/3.
+
+## Cloud Architecture
+- [AWS cloud design patterns](http://en.clouddesignpattern.org/index.php/Main_Page) - The AWS Cloud Design Patterns (CDP).
+- [Azure cloud design patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns) - Building reliable, scalable, secure applications in the cloud.
+- [cloud patterns](http://cloudpatterns.org) - A community site dedicated to documenting a master patterns catalog.
+- [cloud computing patterns](http://www.cloudcomputingpatterns.org) - Cloud Computing Patterns.
+- [Google Cloud Solutions](https://gcp.solutions) - Real business cases solutions with diagrams on GCP.
+
+## Serverless Architecture
+- [serverless architecture](https://thenewstack.io/serverless-architecture-five-design-patterns) - Serverless Architecture: Five Design Patterns.
+- [solving problems in serverless](https://freecontent.manning.com/patterns-for-solving-problems-in-serverless-architectures) - Patterns for Solving Problems in Serverless Architectures.
+
+## Micro services & Distributed Systems
+- [microservice patterns](http://microservicepatterns.org) - A community site dedicated to documenting a master patterns catalog.
+- [microservices](http://microservices.io/patterns) - A pattern language for microservices.
+- [microservices-anti patterns](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls) - Microservices antipatterns and pitfalls.
+- [12factor](https://12factor.net) - The twelve-factor methodology.
+- [microservices-sync-vs-async](https://dzone.com/articles/patterns-for-microservices-sync-vs-async) - Microservices patterns, synchronous and asynchronous.
+- [message-queues](http://tech.forter.com/comparing-message-queue-architectures-on-aws) - Comparing-message-queue-architectures.
+- [enterprise Integration Patterns](http://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html) - Patterns and Best Practices for Enterprise Integration.
+
+## Docker and DevOps
+- [containerspatterns](https://l0rd.github.io/containerspatterns) - There are a Thousand Ways to Use Containers.
+- [container-anti-patterns](http://blog.arungupta.me/docker-container-anti-patterns) - 10 containers anti-patterns.
+- [kubernetes](https://github.com/gravitational/workshop/blob/master/k8sprod.md) - Kubernetes Production Patterns.
+- [container-design-patterns](https://vitalflux.com/container-design-patterns-kubernetes-pods-design) - Container Design Patterns for Kubernetes Pods Design.
+- [pattern-and-anti-pattern-cicd](https://www.gronau-it-cloud-computing.de/pattern-and-anti-pattern-cicd) - Pattern and anti-pattern cicd.
+- [best-practices-for-shell-scripts](https://stackoverflow.com/questions/78497/design-patterns-or-best-practices-for-shell-scripts) - Best practices for shell scripts.
+
+## Security
+- [opensecurityarchitecture](http://www.opensecurityarchitecture.org/cms/library/patternlandscape) - Security Architecture Patterns.
+- [martinfowler](https://www.martinfowler.com/articles/web-security-basics.html) - Web-security-basics.
+- [cloud-security](https://www.infoq.com/articles/cloud-security-architecture-intro) - Cloud security architecture intro.
+- [owasp](https://www.owasp.org/index.php/Security_by_Design_Principles) - Security by Design Principles.
+- [azure-security](https://docs.microsoft.com/en-us/azure/security/security-best-practices-and-patterns) - Azure security best practices and patterns.
 
 # Node.js
 
