@@ -1187,24 +1187,63 @@ Instance locking locks a single relational tuple in an RDBMS or a single object 
 
 ## Database Normalisation
 
-TBW
+Database normalization is process used to organize a database into tables and columns. The idea is that a table should be about a specific topic and that only those columns which support that topic are included. For example, a spreadsheet containing information about sales people and customers serves several purposes:
+
+- Identify sales people in your organization
+- List all customers your company calls upon to sell product
+- Identify which sales people call on specific customers.
+
+By limiting a table to one purpose you reduce the number of duplicate data that is contained within your database, which helps eliminate some issues stemming from database modifications. 
+
+To assist in achieving these objectives, some rules for database table organization have been developed. The stages of organization are called normal forms in database normalisation; there are three normal forms / rules most databases adhere to using.  
+
+As tables satisfy each successive database normalization form, they become less prone to database modification anomalies and more focused toward a sole purpose or topic.
+
+There are three main reasons to normalize a database. 
+
+- 1NF - minimize duplicate data 
+- 2NF - minimize or avoid data modification issues 
+- 3NF - simplify queries. 
+
+There are several additional forms, such as BCNF, but I consider those advanced, and not too necessary to learn in the beginning.  
+
+The forms are progressive, meaning that to qualify for 3rd normal form a table must first satisfy the rules for 2nd normal form, and 2nd normal form must adhere to those for 1st normal form. Before we discuss the various forms and rules in detail, let’s summarize the various forms:
+
+First Normal Form – The information is stored in a relational table and each column contains atomic values, and there are not repeating groups of columns.
+Second Normal Form – The table is in first normal form and all the columns depend on the table’s primary key.
+Third Normal Form – the table is in second normal form and all of its columns are not transitively dependent on the primary key.
 
 ## MySQL
 
-## SQL Server
+Official documentation https://dev.mysql.com/doc/
+
+#### Tools
+
+MySQL Workbench
+
+## MS SQL Server
+
+Official documentation https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation?view=sql-server-2017
 
 ## Postgres
 
+Official documentation https://www.postgresql.org/docs/manuals/
+
 ## MongoDB
+
+Official documentation https://docs.mongodb.com
 
 ## Redis
 
+Official documentation https://redis.io/documentation
+
 ## Cassandra
+
+Official documentation http://cassandra.apache.org/doc/latest/
 
 ## CouchDB
 
-
-# Distributed Computing
+Official Documentation http://docs.couchdb.org/en/stable/
 
 # Logging
 
@@ -1213,27 +1252,100 @@ TBW
 
 # Release Management
 
--   GIT Branching Strategies 
--   Automated and Semantic Versioning
+## GIT Branching Strategies 
+
+#### GIT Flow
+
+The best guide to GIT Flow (in my opinion of course) https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+#### Tools
+
+Commitzen CLI https://github.com/commitizen/cz-cli
+
+## Software Versioning
+
+Semantic versioning guide https://semver.org/
+NPM Semantic versioning guide https://docs.npmjs.com/about-semantic-versioning
+
+#### Automated versioning
+
+https://www.npmjs.com/package/semantic-release - Automate how your NPM package.json file versions are incremented when releasing a package.
+
  
 # Coding Standards
 
 - Google HTML and CSS Code Standards https://google.github.io/styleguide/htmlcssguide.htmlRDFa is an extension to HTML5 that helps you markup things like People, Places, Events, Recipes and Reviews. Search Engines and Web Services use this markup to generate better search listings and give you better visibility on the Web, so that people can find your website more easily.
 
 # Scaling applications for Enterprise use and large traffic
+
+## An introduction to Software Scaling
+
+### Horizontal Scaling
+
+#### Vertical Scaling
+
+## The Role of Clustering
+
+#### Application clustering
+
+#### Server clustering
+
+## Load Balancers
+
+## Tools
   
--   Docker https://www.docker.com/
+#### Docker 
+
+- Official website https://www.docker.com/
+- Docker Hub https://hub.docker.com/
+
+###### Docker Swarm
+
+TBW
+
+###### Docker Tools 
+
 -   Docker Desktop https://www.docker.com/products/docker-desktop
--   Docker Hub https://hub.docker.com/
 -   Kitematic (Simple to use GUI tool to provision docker containers on your desktop). https://kitematic.com/
--   Docker Swarm
 -   Kubernetes https://kubernetes.io/
--   The role of clustering
--   Application clustering 
--   Server clustering
--   Application and server logging  
--   Load Balancing   
--   Message Queueing   
+
+# Software Logging
+
+TBW
+
+## Client / Browser Logging
+
+TBW
+
+## Server Application Logging
+
+TBW
+
+## Hardware Logging
+
+TBW
+
+# Software Monitoring
+
+TBW
+
+## Tools
+
+TBW
+
+# Software Message Queuing 
+
+TBW
+
+## Tools
+
+#### RabbitMQ
+
+TBW
+
+#### ActiveMQ
+
+TBW
 
 # IT Law
 
