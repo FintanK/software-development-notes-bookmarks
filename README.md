@@ -70,6 +70,16 @@ Web Fonts Guide https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/
 
 TBW
 
+## Image Optimization
+
+## Responsive Images
+
+
+# Bandwidth Optimization for Web Applications
+
+TBW
+
+
 # State Management for Web Applications
 
 Just like the server, the browser can have different types of states to manage...
@@ -665,18 +675,30 @@ https://www.netlify.com/ - All-in-one platform for automating modern web project
     
 # Provisioning Tools / Virtualization / Snapshots
 
-Chef
-Vagrant
-Docker / Docker Swarm
-PM2
+## Chef
+
+TBW
+
+## Vagrant
+
+## Docker 
+
+#### Docker Swarm
+
+## PM2
 
 TBW
  
 # Removing friction from the development workflow
 
-Automate release notes
-Avoid scope creep
-Remove the need for hotfixes 
+## Automate release notes
+
+TBW
+
+## Avoiding scope creep
+
+
+## Removing the need for hotfixes 
 
 TBW
 
@@ -693,22 +715,35 @@ Generality
 Incremental Development
 Reliability
 
-- GIT Flow
-- DRY Principles 
-- Service-Oriented Architecture
-- Microservices
-- Functional Programming 
-- Reactive Programming
--   Separation of concerns
--   Modularity of Code 
--   Unit Testing
--   Integration Testing
--   BDD with Cucumber
--   End to end   
--   SOLID Principles
--   Browser Testing
--   Behavioural Testing
--   Commitzen
+## Software Engineering Concepts
+
+#### DRY Principles 
+
+#### Service-Oriented Architecture
+
+#### Microservices
+
+#### Functional Programming 
+
+#### Reactive Programming
+
+#### Separation of concerns
+
+#### Modularity of Code 
+
+#### Unit Testing
+
+#### Code Coverage
+
+#### Integration Testing
+
+#### BDD (Behaviour driven development)
+
+#### End to end testing
+
+#### SOLID Principles
+
+#### Cross Browser Testing
       
   
 # Databases
