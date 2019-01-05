@@ -686,8 +686,9 @@ A comprehensive list of commands can be found here https://github.com/nrwl/nx-ex
 NgRX at it's core is made up of NgRX Store and Effects. It utilizes the popular Rx.js library and it's observable design pattern to
 provide a Redux architecture for state management in Angular.
 
-NgRX Store on Github https://github.com/ngrx/store
-NgRx Effects https://github.com/ngrx/effects
+- NgRX Store on Github https://github.com/ngrx/store
+- NgRx Effects https://github.com/ngrx/effects
+- NgRX best practice patterns https://angularcamp.org/files/State_Management_Patterns_and_Best%20Practices_with_NgRx.pdf
 
 There are other libraries than can be used with NgRX but they are optional.
 
