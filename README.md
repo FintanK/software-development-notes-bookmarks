@@ -17,6 +17,7 @@ This markdown file (which is most certainly a work in progress right now ) attem
 - https://toddmotto.com/ - Todd Motto (Angular).
 - https://johnpapa.net/ - John Papa
 - https://angular-university.io/my-courses - Angular University
+- https://www.pluralsight.com - Pluralsight
 
 # Organisations
 
