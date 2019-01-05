@@ -1555,13 +1555,15 @@ https://www.blueprintsys.com/agile-development-101/agile-methodologies - A guide
 - TFS (Microsoft Team Services) (Now Azure Devops Server) https://azure.microsoft.com/en-us/services/devops/server/
 - Lists, boards and cards https://trello.com/
  
-# Protocol
 
-## HTTP
+# REST (Representational State Transfer) API Development
 
-# REST API Development
+Funnily enough the Wikipedia page for REST provides a great overview https://en.wikipedia.org/wiki/Representational_state_transfer
 
 ## REST API Design Best Practices
+
+Standard HTTP Methods https://cloud.google.com/apis/design/standard_methods
+Resource oriented design https://cloud.google.com/apis/design/resources 
 
 ## Authentication
 
@@ -1577,7 +1579,11 @@ OAuth 2.0 is the industry-standard protocol for authorization. OAuth 2.0 superse
 
 https://oauth.net/2/
 
-## Documentation
+## HATEOAS (Hypermedia as the Engine of Application State)
+
+https://spring.io/understanding/HATEOAS
+
+## Documentation Tools
 
 Swagger (Self documenting your API) https://swagger.io/
     
