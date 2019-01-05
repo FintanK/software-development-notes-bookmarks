@@ -2,7 +2,7 @@
 
 This markdown file (which is most certainly a work in progress right now ) attempts to help me revise many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
-# Some of my favourite websites
+# Some of my favourite websites / blogs
 
 - https://github.com/dypsilon/frontend-dev-bookmarks - Frontend development bookmarks
 - https://developer.mozilla.org/en-US/docs/Web - Mozilla Developer Network
@@ -11,9 +11,8 @@ This markdown file (which is most certainly a work in progress right now ) attem
 - https://tympanus.net/codrops/ - Tympanus Codrops
 - https://www.toptal.com/developers/blog - Toptal
 - https://blog.nrwl.io/ - Cutting edge Angular and Node.js Development
-
-# Developer Blogs
-
+- https://egghead.io/ - Egghead (Web development tutorials)
+- https://blog.risingstack.com - Risingstack - Node.js Development Blog
 - https://flaviocopes.com/ - Flavio Copes (Frontend development).
 - https://toddmotto.com/ - Todd Motto (Angular).
 - https://johnpapa.net/ - John Papa
