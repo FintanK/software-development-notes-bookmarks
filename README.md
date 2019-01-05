@@ -75,8 +75,44 @@ Semantic UI https://semantic-ui.com/
 
 ## CSS Preprocessors
 
-- SASS
-- LESS
+A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on.
+
+#### SASS
+
+#### LESS
+
+#### Stylus
+
+Stylus simplifies your CSS Syntax to an indented format with a lot of extra features!
+
+- Optional colons
+- Optional semi-colons
+- Optional commas
+- Optional braces
+- Variables
+- Interpolation
+- Mixins
+- Arithmetic
+- Type coercion
+- Dynamic importing
+- Conditionals
+- Iteration
+- Nested selectors
+- Parent referencing
+- Variable function calls
+- Lexical scoping
+- Built-in functions (over 60)
+- In-language functions
+- Optional compression
+- Optional image inlining
+- Stylus executable
+- Robust error reporting
+- Single-line and multi-line comments
+- CSS literal for those tricky times
+- Character escaping
+- TextMate bundle
+
+http://stylus-lang.com/
 
 ## CSS Coding Standards
 
@@ -544,20 +580,98 @@ Official documentation https://angular.io/guide/http#intercepting-requests-and-r
 - https://github.com/VadimDez/ng2-pdf-viewer - PDF viewer components
 - https://github.com/vladotesanovic/ngSemantic - Semantic UI CSS Framework ported to Angular components
 
-## Architecting your Angular applications with Nx (Highly recommended)
 
-Nx is brilliant. It allows you to manage your application with a more advanced CLI tool that automates more than the standard Angular CLI.
+## Enterprise Angular applications with Nx (I highly recommended this)
 
-Nx Workspace
-Workspace-Specific Schematics
-State Management
-NgRx
-Data Persistence
-Linters
-Code Formatter
-UpgradeModule and dowgradeModule helpers
+Nx is brilliant. It is built on top of the Angular CLI so it will feel quite familiar to other developers hat have used it before. 
+
+All of the existing Angular CLI commands will work but NX offers more functionality.
+
+It allows you to manage your application with a more advanced CLI tool that automates more than the standard Angular CLI.
+
+It provides a framework for Enterprise Angular development that avoids complications with managing shared libraries and avoiding
+unecessary pipelines.
+
+It also helps developers to see where they can avoid code duplication, increase modularity and avoid introducing breaking changes.
+
+- Extra Code Generation
+- Workspace Management
+- NgRx State Management Code Generation
+- Data Persistence Management
+- Linters
+- Code Formatting
+- UpgradeModule and dowgradeModule helpers
+- Vulnerability scanning
 
 Find out more at https://nrwl.io/nx/overview
+
+#### How Nx structures your Enterprise Angular Applications
+
+```
+<project-root-directory>
+apps/
+  website1.com/
+    src/
+  website2.com
+    src/
+libs/
+  website1.com/
+    src/
+  website2.com/
+    src/
+  ui-component-library
+    src/
+  data-services
+    src/
+```
+
+- You now don't need separate GIT repos!
+- Our applications are independenly deployable!
+- You can clearly see how your applications and shared node modules relate to each other!
+- No more CI/CD Pipelines for every shared library we create!
+- We can clearly see when things break for ANY application!
+- No GIT submodules :)
+- No cloning different GIT repos to see how a shared library works (easier to keep everything on context).
+
+Each library has an index.ts fie so we can use shared modules in our repo as if they we normal NPM modules.
+For example we won't need to do this
+
+```
+import { CustomModule } from '@ourorgansiation/custom/src/custom.module'
+```
+
+We can still do this..
+
+```
+import { CustomModule } from '@ourorgansiation/custom'
+```
+
+###### Some good articles and videos
+
+https://auth0.com/blog/create-custom-schematics-with-nx/ - Creating custom schemantics with Nx
+https://www.youtube.com/watch?v=bMkKz8AedHc - Supercharging the Angular CLI with Nx by James Henry
+
+###### Creating custom Angular Schematics with NX
+
+Angular schematics are a very interesting topic for me personally. Enterprise developers can use Angular Schematics to streamline code generation in projects. The Angular CLI comes when many code generation commands which is powerful for scaffolding applications. These in themselves are Angular Schematics and you can roll your own for your projects or enterprise workspaces. Add Nx to the mix and developers can automate much of their development workflow.
+
+- Library generation
+- Component generation
+- Unit Test Generation
+
+Whatever you want form your code structure really..
+
+###### Benefits
+
+- Enforcing design patterns
+- Enforcing modularity of code
+- Enforcing naming conventions
+
+https://auth0.com/blog/create-custom-schematics-with-nx/
+
+###### Reference Commands
+
+A comprehensive list of commands can be found here https://github.com/nrwl/nx-examples (Highly recommended)
 
 ## State Management with NgRX for Angular.
 
@@ -568,6 +682,8 @@ NgRX Store on Github https://github.com/ngrx/store
 NgRx Effects https://github.com/ngrx/effects
 
 There are other libraries than can be used with NgRX but they are optional.
+
+Note: Code scaffolding for NgRX can be achived with NX Angular Schemantics but it is important to understand how the Redux pattern and NgRX specifcally work with Angular.
 
 #### What is NgRX Store?
 
