@@ -782,6 +782,16 @@ If an effect fetches data from an external source then it will dispatch an actio
 
 Effects don't perform service calls themselves. They will typically offload that work to an Angular service.
 
+#### NgRX Facades
+
+This pattern is purely optional but once implemented provides a much cleaner implementation with NgRX on the component level.
+
+I haven't used this approach myself yet but would like to. I'm curious about how it effects testing.
+
+Its also supported by Nx Angular Schematics!
+
+https://medium.com/@thomasburleson_11450/ngrx-facades-better-state-management-82a04b9a1e39
+
 ###### Optimizing data structures with Entities
 
 In our reducers we can make how we index our data more efficient so that we can use our redux dev tools to easily view and navigate our state
