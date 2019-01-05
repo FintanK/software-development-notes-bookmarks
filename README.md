@@ -10,6 +10,7 @@ This markdown file (which is most certainly a work in progress right now ) attem
 - https://www.smashingmagazine.com/ - Smashing Magazine
 - https://tympanus.net/codrops/ - Tympanus Codrops
 - https://www.toptal.com/developers/blog - Toptal
+- https://blog.nrwl.io/ - Cutting edge Angular and Node.js Development
 
 # Developer Blogs
 
@@ -579,6 +580,7 @@ Official documentation https://angular.io/guide/http#intercepting-requests-and-r
 - https://github.com/travelist/angular2-fontawesome - Angular components for font awesome (not really needed as font awesome is easy).
 - https://github.com/VadimDez/ng2-pdf-viewer - PDF viewer components
 - https://github.com/vladotesanovic/ngSemantic - Semantic UI CSS Framework ported to Angular components
+- https://github.com/BottleRocketStudios/ng-momentum - Ng Momentum - Interesting perspective on Angular Schematics for code generation in your app.
 
 
 ## Enterprise Angular applications with Nx (I highly recommended this)
@@ -650,6 +652,8 @@ import { CustomModule } from '@ourorgansiation/custom'
 
 https://auth0.com/blog/create-custom-schematics-with-nx/ - Creating custom schemantics with Nx
 https://www.youtube.com/watch?v=bMkKz8AedHc - Supercharging the Angular CLI with Nx by James Henry
+https://blog.nrwl.io/building-full-stack-applications-using-angular-cli-and-nx-5eff205248f1 - Creating 
+
 
 ###### Creating custom Angular Schematics with NX
 
@@ -668,6 +672,10 @@ Whatever you want form your code structure really..
 - Enforcing naming conventions
 
 https://auth0.com/blog/create-custom-schematics-with-nx/
+
+###### Final notes on NX
+
+- Use the Angular console app (other developers can learn more quickly this way) https://angularconsole.com/
 
 ###### Reference Commands
 
@@ -846,6 +854,22 @@ Behaviour-Driven Development (BDD) is a collaborative approach to software devel
 
 TBW
 
+#### Cypress 
+
+https://www.cypress.io/ - Official website
+
+Provides
+
+- Time Travel
+- Debuggability
+- Automatic Waiting
+- Spies, Stubs, and Clocks
+- Network Traffic Control
+- Consistent Results
+- Screenshots and Videos
+
+https://blog.nrwl.io/nrwl-nx-7-0-better-e2e-testing-with-cypress-1b88336bef5e - Better E2E Testing with Cypress
+
 ## Angular Documentation Tools
 
 #### Compodoc
@@ -932,6 +956,10 @@ A fantastic code coverage reporting tool. Official documentation can be found he
 This is quite useful for vizualizing your E2E Test Results. It can also display screenshots for debugging.
 
 https://github.com/etxebe/protractor-html-reporter
+
+## Advanced Angular
+
+
 
 # Progressive Web Applications
 
