@@ -586,17 +586,23 @@ Official documentation https://angular.io/guide/http#intercepting-requests-and-r
 
 ## Useful Angular Packages and Modules
 
-- https://www.npmjs.com/package/ngx-moment - MomentJS Angular Pipes
+Tip: Always check the component / module dependencies to avoid bloating the size of your static build files.
+
+- https://murhafsousli.github.io/ngx-gallery/#/lightbox - Image Lightbox Component
+- https://murhafsousli.github.io/ngx-gallery/#/gallery - Image Gallery Component
+- https://github.com/MurhafSousli/ngx-teximate - Angular Text Animation plugins for your components.
+- https://www.npmjs.com/package/ngx-quill - Rich text editor component with code snippet themes and plugins.
+- https://www.npmjs.com/package/ngx-moment - MomentJS Angular Pipes.
 - https://github.com/atularen/ngx-monaco-editor (Browser-based code editor for Microsoft. Angular component.)
 - https://manfredsteyer.github.io/angular-oauth2-oidc/docs/ - Excellent module for providing OAuth Authentication.
 - https://hackafro.github.io/angular-epic-spinners/ - Spinner Components
 - https://valor-software.com/ngx-bootstrap/#/ - Ngx Bootstrap - Angular 4 Bootstrap components.
-- https://valor-software.com/ng2-dragula/ - Drag and drop components
-- https://github.com/evanplaice/ng2-markdown - Markdown component
-- https://valor-software.com/ng2-file-upload/ - File upload components
+- https://valor-software.com/ng2-dragula/ - Drag and drop components.
+- https://github.com/evanplaice/ng2-markdown - Markdown component.
+- https://valor-software.com/ng2-file-upload/ - File upload components.
 - https://github.com/travelist/angular2-fontawesome - Angular components for font awesome (not really needed as font awesome is easy).
-- https://github.com/VadimDez/ng2-pdf-viewer - PDF viewer components
-- https://github.com/vladotesanovic/ngSemantic - Semantic UI CSS Framework ported to Angular components
+- https://github.com/VadimDez/ng2-pdf-viewer - PDF viewer components.
+- https://github.com/vladotesanovic/ngSemantic - Semantic UI CSS Framework ported to Angular components.
 - https://github.com/BottleRocketStudios/ng-momentum - Ng Momentum - Interesting perspective on Angular Schematics for code generation in your app.
 
 
