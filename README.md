@@ -1002,7 +1002,11 @@ https://github.com/etxebe/protractor-html-reporter
 Note: You will need HTTPS on your website to fully utilise this browser feature.
 
 https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API - Mozilla Service Worker API Guide.
-    
+
+## App Cache Manifest
+
+Use a service worker instead :)
+
 ## PWA Icons
  
 TBW   
