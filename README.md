@@ -586,6 +586,7 @@ Official documentation https://angular.io/guide/http#intercepting-requests-and-r
 
 ## Useful Angular Packages and Modules
 
+- https://www.npmjs.com/package/ngx-moment - MomentJS Angular Pipes
 - https://github.com/atularen/ngx-monaco-editor (Browser-based code editor for Microsoft. Angular component.)
 - https://manfredsteyer.github.io/angular-oauth2-oidc/docs/ - Excellent module for providing OAuth Authentication.
 - https://hackafro.github.io/angular-epic-spinners/ - Spinner Components
