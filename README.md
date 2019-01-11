@@ -999,7 +999,9 @@ https://github.com/etxebe/protractor-html-reporter
 
 ## Service workers
 
-TBW
+Note: You will need HTTPS on your website to fully utilise this browser feature.
+
+https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API - Mozilla Service Worker API Guide.
     
 ## PWA Icons
  
