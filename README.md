@@ -396,9 +396,11 @@ Scientamobile - https://www.scientiamobile.com/
 
 # IDE (Integrated Development Environments)
 
--   VSCode
--   WebStorm
--   IntelliJ IDEA
+## VSCode
+
+## WebStorm
+
+Use GIT Bash for the terminal in Webstorm https://gist.github.com/sadikaya/f5fa699c435ebfafece2fb7d982bcdb5
 
 # Web Servers
 
