@@ -1,5 +1,7 @@
 # :books: :ledger: Software Development Notes and Bookmarks
 
+Standing on the shoulders of giants..
+
 This markdown file (which is most certainly a work in progress right now ) attempts to help me revise many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
 # Some of my favourite websites / blogs
@@ -489,9 +491,9 @@ https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner -
 
 The most popular Node.js module for creating REST API https://expressjs.com/
 
-#### Helmet.js
+https://expressjs.com/en/guide/using-middleware.html - Express.js Middleware.
 
-This allows you to secure your REST API by locking down the used headers https://github.com/helmetjs/helmet
+Express.js middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
 
 #### RxJS  
 
@@ -501,18 +503,30 @@ Subjects (BehaviourSubject, ReplaySubject, Asynch) with RXJS. [Click here](https
   
 Operators with RXJS [Click here](https://coursetro.com/posts/code/150/RxJS-Operators-Tutorial---Learn-How-to-Transform-Observables)
 
-#### Axios 
+#### Other
 
-https://github.com/axios/axios - Promise based HTTP client for the browser and node.js
-
-#### Lodash
-    
-Utility library for many common Javascript use cases https://lodash.com/
-
-#### MomentJS
-
-https://momentjs.com/docs/ - Official docs.
-https://momentjs.com/timezone/ - Moment Timezone.
+- [MomentJS](https://lodash.com/) - Functional utility library
+- [MomentJS](https://momentjs.com/docs/) - Date Utility Library
+- [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+- [Cors](https://github.com/expressjs/cors) - Express.js middleware to allow cross origin resource sharing
+- [Body-Parser](https://github.com/expressjs/body-parser) - Express.js request body parsing middleware to parse your API requests
+- [Morgan](https://github.com/expressjs/morgan) - Express.js middleware to log incoming API requests.
+- [PassportJS](https://github.com/jaredhanson/passport) - Node and Express.js middleware for all of your authentication needs. Both JWT and OAuth.
+- [Passport-Local](https://github.com/jaredhanson/passport-local) - Username and password authentication strategy for Passport and Node.js.
+- [Passport-JWT](https://github.com/themikenicholson/passport-jwt) - Passport.js authentication using JSON Web Tokens
+- [Raven](https://github.com/getsentry/raven-node) - A standalone (Node.js) client for Sentry (Sentry is error reporting software).
+- [Joi](https://github.com/hapijs/joi) - Out of the box object schema validation. Useful for your data models and validating different types of data automatically.
+- [Http-Status](https://github.com/adaltas/node-http-status) - Utility to interact with HTTP status code in Node.js
+- [Lint-Staged](https://github.com/okonet/lint-staged) - CLI Tool. Run linters on git staged files.
+- [Husky](https://github.com/typicode/husky) - GIT Hooks simplified.
+- [Prettier](https://github.com/prettier/prettier) - CLI Tool. Prettier is an opinionated code formatter.
+- [Eslint Config Prettier](https://github.com/prettier/eslint-config-prettier) - ESLint rule template.
+- [Istanbul](https://github.com/gotwarlost/istanbul) - Code coverage Tools
+- [Mocha](https://github.com/mochajs/mocha) - Unit Test Framework
+- [Chai](https://github.com/chaijs/chai) - JS Assertion Library
+- [Supertest](https://github.com/visionmedia/supertest) - Test your API Endpoints with Node.js code.
+- [NPS](https://github.com/kentcdodds/nps) - NPS is a package that solves the problem of large and complicated NPM scripts by allowing you to move your scripts to a package-scripts.js file. Because this file is a JavaScript file, you can do a lot more with your project scripts.
+- [Mongoose](http://mongoosejs.com/) - MongoDB Object Modelling for Node.js.
 
 #### IPFS
 
@@ -653,7 +667,6 @@ import { CustomModule } from '@ourorgansiation/custom'
 https://auth0.com/blog/create-custom-schematics-with-nx/ - Creating custom schemantics with Nx
 https://www.youtube.com/watch?v=bMkKz8AedHc - Supercharging the Angular CLI with Nx by James Henry
 https://blog.nrwl.io/building-full-stack-applications-using-angular-cli-and-nx-5eff205248f1 - Creating 
-
 
 ###### Creating custom Angular Schematics with NX
 
@@ -1085,11 +1098,16 @@ JAVA - Maven Gradle repositories.
 
 ## CI Platforms and Tools
 
-https://semaphoreci.com/ - Semaphore CI
-https://jenkins.io/ - Jenkins
-https://azure.microsoft.com/en-gb/solutions/architecture/azure-devops-continuous-integration-and-continuous-deployment-for-azure-web-apps/ - Microsoft Azure CI/CD
-https://cloud.google.com/cloud-build/ - Google Cloud Build
-https://aws.amazon.com/ - Amazon Web Services
+- [CodeClimate](https://codeclimate.com/)
+- [Coveralls](https://github.com/integrations/coveralls)
+- [Travis Ci](https://travis-ci.org/)
+- [Circle Ci](https://circleci.com/)
+- [Greenkeeper](https://greenkeeper.io/)
+- https://semaphoreci.com/ - Semaphore CI
+- https://jenkins.io/ - Jenkins
+- https://azure.microsoft.com/en-gb/solutions/architecture/azure-devops-continuous-integration-and-continuous-deployment-for-azure-web-apps/ - Microsoft Azure CI/CD
+- https://cloud.google.com/cloud-build/ - Google Cloud Build
+- https://aws.amazon.com/ - Amazon Web Services
 
 ## IAAS (Infrastructure as a service)
 
