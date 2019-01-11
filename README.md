@@ -589,6 +589,7 @@ Official documentation https://angular.io/guide/http#intercepting-requests-and-r
 
 Tip: Always check the component / module dependencies to avoid bloating the size of your static build files.
 
+- https://github.com/Asymmetrik/ngx-leaflet - Themed Google Map Components
 - https://murhafsousli.github.io/ngx-gallery/#/lightbox - Image Lightbox Component
 - https://murhafsousli.github.io/ngx-gallery/#/gallery - Image Gallery Component
 - https://github.com/MurhafSousli/ngx-teximate - Angular Text Animation plugins for your components.
