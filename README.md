@@ -782,13 +782,13 @@ export class YourCustomComponent implements OnInit {
 Then in your HTML for the component
 
 ```
-<div *ngIf="!((todos$ | asynch)?.length)">
+<div *ngIf="!((todos$ | async)?.length)">
     These are currently no to do items
 </div>
-<to-do-item *ngFor="let todo of (todos$ | asynch)" [todo]="todo"></to-do-item>
+<to-do-item *ngFor="let todo of (todos$ | async)" [todo]="todo"></to-do-item>
 ```
 
-This observables and asynch approach makes your components implement a reactive architecture.
+This observables and async approach makes your components implement a reactive architecture.
 
 #### What are NgRX Effects?
 
