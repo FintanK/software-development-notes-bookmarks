@@ -6,6 +6,7 @@ This markdown file (which is most certainly a work in progress right now ) attem
 
 # Some of my favourite websites / blogs
 
+- https://devchat.tv - Devchat.tv Developer Podcasts 
 - https://github.com/dypsilon/frontend-dev-bookmarks - Frontend development bookmarks
 - https://css-tricks.com/ - CSS Tricks
 - https://developer.mozilla.org/en-US/docs/Web - Mozilla Developer Network
