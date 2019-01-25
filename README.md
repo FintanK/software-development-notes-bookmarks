@@ -23,6 +23,7 @@ This markdown file (which is most certainly a work in progress right now ) attem
 - https://angular-university.io/my-courses - Angular University
 - https://www.pluralsight.com - Pluralsight
 - https://github.com/gothinkster/realworld - Real World apps by Thinkster
+- https://dzone.com/ - Dzone - Great articles on devops
 
 # Organisations
 
@@ -1211,8 +1212,20 @@ pm2 start app.js --no-daemon
 pm2 start app.js --no-vizion
 pm2 start app.js --no-autorestart
 ```
+
+# Kubernetes Container Orchestration
+
+TBW
  
 # Removing friction from the development workflow
+
+## Environment Variables
+
+TBW
+
+## Semantic Versioning
+
+TBW
 
 ## Automate release notes
 
