@@ -890,7 +890,7 @@ https://www.xfive.co/blog/testing-angular-faster-jest/
 - https://github.com/jest-community/jest-extended (Additional assertations)
 - https://github.com/mattphillips/jest-chain (Chain your assertions for less code)
 - https://github.com/Hargne/jest-html-reporter - HTML Test Results Report
-- 
+- https://github.com/marak/Faker.js/ - Generate fake data for spies and mocks.
 
 ## Angular End to End Testing
 
