@@ -883,6 +883,13 @@ https://www.xfive.co/blog/testing-angular-faster-jest/
 - Easier to debug as the error messages are less verbose
 - The browser is mocked and the tests run in JSDOM instead (much, much faster!)
 
+###### Useful Libraries
+
+- https://github.com/jest-community/jest-extended (Additional assertations)
+- https://github.com/mattphillips/jest-chain (Chain your assertions for less code)
+- https://github.com/Hargne/jest-html-reporter - HTML Test Results Report
+- 
+
 ## Angular End to End Testing
 
 #### Protractor
