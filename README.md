@@ -124,10 +124,12 @@ http://stylus-lang.com/
 ## CSS Coding Standards
 
 - BEM (Block Element Modifier) http://getbem.com/introduction/
+- ITCSS https://github.com/ahmadajmi/awesome-itcss
 
 ## CSS Articles
 
 Conditional CSS Support Checks  https://www.lottejackson.com/learning/supports-will-change-your-life
+CSS Mixins https://css-tricks.com/custom-user-mixins/
 
 ## Javascript
 
