@@ -492,7 +492,7 @@ Much more to come here.
 
 #### NPX
 
-NPX is great. It simplifies how you can run node package binaries inside your project.
+NPX is great. It simplifies how you can run node package binaries inside your project. It is now included with NPM by default.
 
 https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner - An introduction
 
@@ -595,6 +595,7 @@ Official documentation https://angular.io/guide/http#intercepting-requests-and-r
 
 Tip: Always check the component / module dependencies to avoid bloating the size of your static build files.
 
+- https://github.com/ngrx/platform/tree/master/docs/entity - Streamline development of your model based reducers and selectors with NgRX. (Good reference here https://blog.angular-university.io/ngrx-entity/#operationssupportedbythengrxentityadapter)
 - https://www.npmjs.com/package/ngrx-store-freeze - Prevents mutations on Angular Router with NgRX
 - https://github.com/Asymmetrik/ngx-leaflet - Themed Google Map Components
 - https://murhafsousli.github.io/ngx-gallery/#/lightbox - Image Lightbox Component
@@ -823,9 +824,17 @@ Its also supported by Nx Angular Schematics!
 
 https://medium.com/@thomasburleson_11450/ngrx-facades-better-state-management-82a04b9a1e39
 
-###### Optimizing data structures with Entities
+#### NgRX Entities
 
-In our reducers we can make how we index our data more efficient so that we can use our redux dev tools to easily view and navigate our state
+A great tutorial https://blog.angular-university.io/ngrx-entity/#operationssupportedbythengrxentityadapter
+
+Can be used with NgRX Schematics and provides..
+
+- Entity State adapter for managing record collections by ID reference.
+- Entity provides an API to manipulate and query entity collections.
+- Reduces boilerplate for creating reducers that manage a collection of models.
+- Provides performant CRUD operations for managing entity collections.
+- Extensible type-safe adapters for selecting entity information.
 
 #### Redux Dev Tools - Highly recommended
 
