@@ -24,22 +24,23 @@ This markdown file (which is most certainly a work in progress right now ) attem
 - https://www.pluralsight.com - Pluralsight
 - https://github.com/gothinkster/realworld - Real World apps by Thinkster
 - https://dzone.com/ - Dzone - Great articles on devops
+- https://auth0.com/blog/ - Auth0 Blog
 
 # Organisations
 
 - W3C https://www.w3.org/
 - IEEE https://www.ieee.org/
-- IETF https://www.ietf.org/ , 
+- IETF https://www.ietf.org/ 
 
 # Protocols and Standards
 
-- HTTP 2 Guide https://httpd.apache.org/docs/trunk/howto/http2.html
-- OSI Model https://www.webopedia.com/quick_ref/OSI_Layers.asp
-- IETF Standards and Guidelines https://wordtothewise.com/wisewords/internet-protocols-standards/
-- FTP
-- SMTP – Simple Mail Transfer Protocol
-- MIME – Multimedia Internet Email Extensions
-- SSL
+- HTTP 2 Guide - https://httpd.apache.org/docs/trunk/howto/http2.html
+- OSI Model - https://www.webopedia.com/quick_ref/OSI_Layers.asp
+- IETF Standards and Guidelines - https://wordtothewise.com/wisewords/internet-protocols-standards/
+- FTP - https://tools.ietf.org/html/rfc959
+- SMTP – Simple Mail Transfer Protocol - https://tools.ietf.org/html/rfc5321
+- MIME – Multipurpose  Internet Email Extensions - https://tools.ietf.org/html/rfc2045
+- SSL - The Secure Sockers Layer https://tools.ietf.org/html/rfc6101
 
 # Markdown
 
