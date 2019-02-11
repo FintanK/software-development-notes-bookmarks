@@ -1686,6 +1686,9 @@ https://www.blueprintsys.com/agile-development-101/agile-methodologies - A guide
 - TFS (Microsoft Team Services) (Now Azure Devops Server) https://azure.microsoft.com/en-us/services/devops/server/
 - Lists, boards and cards https://trello.com/
  
+# ODATA (Open Data Protocol) API Development
+
+OData Standard https://www.odata.org/documentation/
 
 # REST (Representational State Transfer) API Development
 
