@@ -416,6 +416,8 @@ Use GIT Bash for the terminal in Webstorm https://gist.github.com/sadikaya/f5fa6
 Official documentation https://httpd.apache.org/docs/current/
 .htcaccess file configuration https://httpd.apache.org/docs/current/howto/htaccess.html
 
+Best documentation on Github: https://github.com/trimstray/nginx-quick-reference
+
 ## Nginx
 
 Official documentation https://nginx.org/en/docs/
