@@ -866,6 +866,12 @@ our dev tools. It also makes our application more reactive.
 - Keep your stores inside of the relevant modules only. This will allow you to keep your feature implementations modular.
 - Optimize your folder structure with index.ts files wherever possible to avoid too many imports.
 
+## Other state management solutions for Angular
+
+NgXS - https://ngxs.gitbook.io/ngxs
+
+https://blog.singular.uk/why-i-prefer-ngxs-over-ngrx-df727cd868b5 - A comparison between NgXS and NgRX
+
 ## Angular Module / Folder Organisation Best Practices
 
 This is a controversial topic depending on which developers / teams and organisations you ask.
