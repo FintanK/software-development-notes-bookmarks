@@ -31,6 +31,18 @@ This markdown file (which is most certainly a work in progress right now ) attem
 - W3C https://www.w3.org/
 - IEEE https://www.ieee.org/
 - IETF https://www.ietf.org/ 
+- ICANN https://www.icann.org/
+
+## Common Abbreviations
+
+- IAB (Internet Architecture Board)
+- IANA (Internet Assigned Numbers Authority)
+- ICANN (Internet Corporation for Assigned Names and Numbers)
+- IESG (Internet Engineering Steering Group)
+- IETF (Internet Engineering Task Force)
+- IRTF (Internet Research Task Force)
+- ISOC (Internet Society)
+- W3C (World Wide Web Consortium)
 
 # Protocols and Standards
 
@@ -869,6 +881,8 @@ our dev tools. It also makes our application more reactive.
 ## Other state management solutions for Angular
 
 NgXS - https://ngxs.gitbook.io/ngxs
+Akkita - https://blog.angularindepth.com/state-management-in-angular-using-akita-82f117d282dd
+Mobx - https://mobx.js.org/getting-started.html - can be plugged into Angular https://github.com/mobxjs/mobx-angular
 
 https://blog.singular.uk/why-i-prefer-ngxs-over-ngrx-df727cd868b5 - A comparison between NgXS and NgRX
 
