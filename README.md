@@ -609,6 +609,7 @@ Official documentation https://angular.io/guide/http#intercepting-requests-and-r
 
 Tip: Always check the component / module dependencies to avoid bloating the size of your static build files.
 
+- https://material.angular.io/cdk/layout/overview - Angular CDK - Subscribe to events based on screen viewports / media queries.
 - https://github.com/ngrx/platform/tree/master/docs/entity - Streamline development of your model based reducers and selectors with NgRX. (Good reference here https://blog.angular-university.io/ngrx-entity/#operationssupportedbythengrxentityadapter)
 - https://www.npmjs.com/package/ngrx-store-freeze - Prevents mutations on Angular Router with NgRX
 - https://github.com/Asymmetrik/ngx-leaflet - Themed Google Map Components
@@ -1036,9 +1037,6 @@ A fantastic code coverage reporting tool. Official documentation can be found he
 This is quite useful for vizualizing your E2E Test Results. It can also display screenshots for debugging.
 
 https://github.com/etxebe/protractor-html-reporter
-
-## Advanced Angular
-
 
 
 # Progressive Web Applications
