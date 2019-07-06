@@ -1189,6 +1189,8 @@ TBW
 
 ## PM2 (Production Process Manager)
 
+PM2 or Process Manager 2, is an Open Source, production Node.js process manager helping Developers and Devops manage Node.js applications in production environment. In comparison with other process manager like Supervisord, Forever, Systemd, some key features of PM2 are automatic application load balancing, declarative application configuration, deployment system and monitoring.
+
 #### Commands
 
 ## Fork mode
