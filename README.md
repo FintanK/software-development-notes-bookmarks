@@ -502,7 +502,7 @@ Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-ii
 
 Much more to come here.
 
-## Popular Node.js Packages and Libraries
+## Popular Node.js Frameworks, Libraries and Packages.
 
 #### NPX
 
@@ -517,6 +517,24 @@ The most popular Node.js module for creating REST API https://expressjs.com/
 https://expressjs.com/en/guide/using-middleware.html - Express.js Middleware.
 
 Express.js middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
+
+#### Nest.js
+
+https://docs.nestjs.com/
+
+If you're a React or Angular developer today using Typescript, this framework will be quite intuitive. 
+
+Nest.js is a backend framework that allows you to develop scalable APIs or any other type of backend service you require. It is built on top of Express.js but allows for a more structured enterprise-grade codebase using Typescript.
+
+
+More to come..
+
+
+#### Nodemon
+
+https://nodemon.io/
+
+Nodemon enables live reloading within your application. It will watch your source files for changes and trigger a rebuild / reload of your code when necessary.
 
 #### RxJS  
 
