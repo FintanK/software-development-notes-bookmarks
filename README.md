@@ -956,6 +956,7 @@ TBW
 #### Cypress 
 
 https://www.cypress.io/ - Official website
+https://chrome.google.com/webstore/detail/cypress-scenario-recorder/fmpgoobcionmfneadjapdabmjfkmfekb?hl=en - Useful Chrome Extension for generating script.
 
 Provides
 
