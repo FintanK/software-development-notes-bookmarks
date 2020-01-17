@@ -4,10 +4,8 @@ Standing on the shoulders of giants..
 
 This markdown file (which is always a work in progress) helps me revise many of the topics that i've covered over the last 12 years in the area of software development. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
-# Some of my favourite websites / blogs
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Some of my favourite websites / blogs</summary>
   
 - https://devchat.tv - Devchat.tv Developer Podcasts 
 - https://github.com/dypsilon/frontend-dev-bookmarks - Frontend development bookmarks
@@ -31,12 +29,16 @@ This markdown file (which is always a work in progress) helps me revise many of 
 
 </details>
 
-# Organisations
-
+<details>
+  <summary>Organisations</summary>
+  
 - W3C https://www.w3.org/
 - IEEE https://www.ieee.org/
 - IETF https://www.ietf.org/ 
 - ICANN https://www.icann.org/
+
+</details>
+
 
 ## Common Abbreviations
 
