@@ -2,10 +2,13 @@
 
 Standing on the shoulders of giants..
 
-This markdown file (which is most certainly a work in progress right now ) attempts to help me revise many of the topics that i've covered over the last 12 years in the area of computer science. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
+This markdown file (which is always a work in progress) helps me revise many of the topics that i've covered over the last 12 years in the area of software development. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
 # Some of my favourite websites / blogs
 
+<details>
+  <summary>Click to expand!</summary>
+  
 - https://devchat.tv - Devchat.tv Developer Podcasts 
 - https://github.com/dypsilon/frontend-dev-bookmarks - Frontend development bookmarks
 - https://css-tricks.com/ - CSS Tricks
@@ -25,6 +28,8 @@ This markdown file (which is most certainly a work in progress right now ) attem
 - https://github.com/gothinkster/realworld - Real World apps by Thinkster
 - https://dzone.com/ - Dzone - Great articles on devops
 - https://auth0.com/blog/ - Auth0 Blog
+
+</details>
 
 # Organisations
 
