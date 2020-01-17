@@ -4,7 +4,7 @@ Standing on the shoulders of giants..
 
 This markdown file (which is always a work in progress) helps me revise many of the topics that i've covered over the last 12 years in the area of software development. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
-<details>
+<details open>
   <summary>Some of my favourite websites / blogs</summary>
   
 - https://devchat.tv - Devchat.tv Developer Podcasts 
@@ -29,7 +29,7 @@ This markdown file (which is always a work in progress) helps me revise many of 
 
 </details>
 
-<details>
+<details open>
   <summary>Organisations</summary>
   
 - W3C https://www.w3.org/
@@ -39,9 +39,9 @@ This markdown file (which is always a work in progress) helps me revise many of 
 
 </details>
 
-
-## Common Abbreviations
-
+<details open>
+  <summary>Common Abbreviations</summary>
+  
 - IAB (Internet Architecture Board)
 - IANA (Internet Assigned Numbers Authority)
 - ICANN (Internet Corporation for Assigned Names and Numbers)
@@ -51,8 +51,12 @@ This markdown file (which is always a work in progress) helps me revise many of 
 - ISOC (Internet Society)
 - W3C (World Wide Web Consortium)
 
-# Protocols and Standards
+</details>
 
+
+<details open>
+  <summary>Protocols and Standards</summary>
+  
 - HTTP 2 Guide - https://httpd.apache.org/docs/trunk/howto/http2.html
 - OSI Model - https://www.webopedia.com/quick_ref/OSI_Layers.asp
 - IETF Standards and Guidelines - https://wordtothewise.com/wisewords/internet-protocols-standards/
@@ -60,6 +64,9 @@ This markdown file (which is always a work in progress) helps me revise many of 
 - SMTP – Simple Mail Transfer Protocol - https://tools.ietf.org/html/rfc5321
 - MIME – Multipurpose  Internet Email Extensions - https://tools.ietf.org/html/rfc2045
 - SSL - The Secure Sockers Layer https://tools.ietf.org/html/rfc6101
+
+</details>
+
 
 # Markdown
 
