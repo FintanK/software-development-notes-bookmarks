@@ -4,7 +4,8 @@ Standing on the shoulders of giants..
 
 This markdown file (which is always a work in progress) helps me revise many of the topics that i've covered over the last 12 years in the area of software development. It includes links to some of my favourite articles / resources as well as some short write ups of my own interpretations of many topics / concepts that i've encountered along the way.
 
-<details open>
+<details>
+  
   <summary>Some of my favourite websites / blogs</summary>
   
 - https://devchat.tv - Devchat.tv Developer Podcasts 
@@ -29,7 +30,8 @@ This markdown file (which is always a work in progress) helps me revise many of 
 
 </details>
 
-<details open>
+<details>
+  
   <summary>Organisations</summary>
   
 - W3C https://www.w3.org/
@@ -39,7 +41,8 @@ This markdown file (which is always a work in progress) helps me revise many of 
 
 </details>
 
-<details open>
+<details>
+  
   <summary>Common Abbreviations</summary>
   
 - IAB (Internet Architecture Board)
@@ -54,7 +57,8 @@ This markdown file (which is always a work in progress) helps me revise many of 
 </details>
 
 
-<details open>
+<details>
+  
   <summary>Protocols and Standards</summary>
   
 - HTTP 2 Guide - https://httpd.apache.org/docs/trunk/howto/http2.html
