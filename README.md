@@ -644,7 +644,7 @@ Official documentation https://angular.io/guide/http#intercepting-requests-and-r
 ## Useful Angular Packages and Modules
 
 Tip: Always check the component / module dependencies to avoid bloating the size of your static build files.
-
+- https://github.com/NetanelBasal/ngx-auto-unsubscribe - Angular Observable Unsubscribe
 - https://material.angular.io/cdk/layout/overview - Angular CDK - Subscribe to events based on screen viewports / media queries.
 - https://github.com/ngrx/platform/tree/master/docs/entity - Streamline development of your model based reducers and selectors with NgRX. (Good reference here https://blog.angular-university.io/ngrx-entity/#operationssupportedbythengrxentityadapter)
 - https://www.npmjs.com/package/ngrx-store-freeze - Prevents mutations on Angular Router with NgRX
