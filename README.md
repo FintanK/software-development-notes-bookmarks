@@ -27,6 +27,7 @@ This markdown file (which is always a work in progress) helps me revise many of 
 - https://github.com/gothinkster/realworld - Real World apps by Thinkster
 - https://dzone.com/ - Dzone - Great articles on devops
 - https://auth0.com/blog/ - Auth0 Blog
+- https://christianlydemann.com/blog/ - Christian Ludemann Angular Blog
 
 </details>
 
@@ -624,6 +625,9 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 - Hot Module Replacement with Angular - https://medium.com/wizardnet972/hot-module-replacement-with-angular-cli-5fc7a3ae4a9c
 - Deploying Angular Applications to a serverless environment https://medium.com/@maciejtreder/angular-serverless-a713e86ea07a
 - Angular Universal (Server Side Rendering) https://angular.io/guide/universal
+- Bundle size budget warnings for your builds https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/budgets.md
+- https://christianlydemann.com/the-ten-commandments-of-angular-development/#two - The Ten Commandments of Angular Development
+
 
 ## Learning resources
 
