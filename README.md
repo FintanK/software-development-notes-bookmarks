@@ -1863,7 +1863,24 @@ https://aframe.io/ - Aframe
 WebVR Specification https://webvr.info/
 WebVR Experiments https://experiments.withgoogle.com/collection/webvr
 
-# Augmented Reality
+# How to Close a Port in Windows
+To close a port in Windows, you need to find the process ID of the application or service that opened the connection. Then, you can terminate the process or configure the application or service.
 
-TBD
+> netstat -ano | find ":3306"
+TCP    [::]:3306    [::]:0    LISTENING    33208
+
+Use the process ID from the previous step to identify the application or service that owns that process.
+
+> tasklist /F /PID 33208
+Image Name    PID     Services
+mysqld.exe    33208   N/A
+
+If the application is not needed, use the process ID from the second step to terminate the process.
+
+> taskkill /F /PID 33208
+SUCCESS: The process with PID 33208 has been terminated.
+
+verify that the process is killed.
+
+> netstat -ano | find ":3306"
 
