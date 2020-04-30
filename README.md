@@ -1885,7 +1885,7 @@ verify that the process is killed.
 > netstat -ano | find ":3306"
 
 
-Python
+## Python
 
 Alpha-Go Zero Neural Network https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0
 
