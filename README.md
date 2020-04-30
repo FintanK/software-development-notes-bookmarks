@@ -1884,3 +1884,16 @@ verify that the process is killed.
 
 > netstat -ano | find ":3306"
 
+
+Python
+
+Alpha-Go Zero Neural Network https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0
+
+Inline-style: 
+![alt text](https://miro.medium.com/max/2000/1*0pn33bETjYOimWjlqDLLNw.png "https://miro.medium.com/max/2000/1*0pn33bETjYOimWjlqDLLNw.png")
+
+Django https://www.djangoproject.com/
+Fluent Python - O'Reilly Book http://shop.oreilly.com/product/0636920032519.do
+
+
+
