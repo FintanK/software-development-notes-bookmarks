@@ -505,6 +505,7 @@ Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-ii
 # Node.js
 
 - Package Managers (NPM, YARN)
+- NVM (Node Version Manager) https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b
 - Open Source Packages https://www.npmjs.com/
 - Set up your own private registry https://github.com/verdaccio/verdaccio
 - Exporting Modules https://flaviocopes.com/node-export-module/
