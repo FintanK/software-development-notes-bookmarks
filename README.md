@@ -1888,13 +1888,34 @@ verify that the process is killed.
 
 ## Python
 
-Alpha-Go Zero Neural Network https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0
+https://github.com/vinta/awesome-python - A curated list of awesome Python frameworks, libraries, software and resources.
 
-Inline-style: 
-![alt text](https://miro.medium.com/max/2000/1*0pn33bETjYOimWjlqDLLNw.png "https://miro.medium.com/max/2000/1*0pn33bETjYOimWjlqDLLNw.png")
+### Pip - (The Python Package Installer)
 
-Django https://www.djangoproject.com/
-Fluent Python - O'Reilly Book http://shop.oreilly.com/product/0636920032519.do
+https://pypi.org/project/pip/ 
+
+User Guide https://pip.pypa.io/en/stable/user_guide/
+
+### DJANGO (A Python Framework)
+
+https://docs.djangoproject.com/en/3.0/
+
+### Flask (A Python Framework - My preference)
+
+https://flask.palletsprojects.com/en/1.1.x/
+
+### SQL Alchemy (Python ORM, Migration and Database Management Module)
+
+https://www.sqlalchemy.org/ 
+
+
+### Other useful modules and packages
+
+https://github.com/davedoesdev/python-jwt - Generate JSON Web Tokens for Authentication
+https://github.com/jazzband/django-oauth-toolkit - Handle authentication using OAuth 2
+
+
+
 
 
 
