@@ -212,13 +212,9 @@ https://kinsta.com/blog/optimize-images-for-web/ - How to opimize images for the
 
 PNG (pronounced ping as in ping-pong; for Portable Network Graphics) is a file format for image compression that, in time, is expected to replace the Graphics Interchange Format (GIF) that is widely used on today's Internet.
 
-TBW
-
 ## JPEG, JPG
 
 JPEG is a commonly used method of lossy compression for digital images, particularly for those images produced by digital photography. The degree of compression can be adjusted, allowing a selectable tradeoff between storage size and image quality.
-
-TBW
 
 ## SVG
 
@@ -232,7 +228,30 @@ HTML responsive images https://developer.mozilla.org/en-US/docs/Learn/HTML/Multi
 
 # Bandwidth Optimization for Web Applications
 
-TBW
+In order to ensure that your application is lightweight and responds quickly to user input, it's important to take a look at how much bandwith your application uses.
+
+A quick way to do this is to open your dev tools and take a look at the total size of all downloaded assets when loading the website.
+
+## Caching
+
+Setting cache control policies on HTTP response headers can prevent the browser having the re-download the same resource.
+
+Service workers are also useful for defining which assets you would like to cache locally.
+
+## File Compression 
+
+Many forms of downloaded media can be compressed. For more information on compression with HTTP take a look here https://developer.mozilla.org/en-US/docs/Web/HTTP/Compression
+
+
+## File Concatenation
+
+Using a build tool like Webpack or Grunt can allow you to combine multiple css, js or other file types into a single file reducing the amount of concurrent requests the browser has to make and can help an initial page request load faster.
+
+
+## Client and server side detection
+
+Detecting the user's device can be quite useful when it comes to choosing what types of media to download. For example, you can generate different sizes for an image and then serve smaller images for user's on a mobile browser.
+
 
 # State Management for Web Applications
 
@@ -974,7 +993,7 @@ https://www.xfive.co/blog/testing-angular-faster-jest/
 
 Behaviour-Driven Development (BDD) is a collaborative approach to software development that bridges the communication gap between business and IT. BDD helps teams communicate requirements with more precision, discover defects early and produce software that remains maintainable over time.
 
-TBW
+https://dev.to/fzwael/bdd-with-angular-and-cucumberjs-p8
 
 #### Cypress 
 
@@ -992,6 +1011,16 @@ Provides
 - Screenshots and Videos
 
 https://blog.nrwl.io/nrwl-nx-7-0-better-e2e-testing-with-cypress-1b88336bef5e - Better E2E Testing with Cypress
+
+
+#### Storybook
+
+https://storybook.js.org/docs/react/get-started/introduction
+
+Storybook allows for a more collaborative approach to developing UI components with React, Vue and Angular.
+
+QA, Developers and UX Teams can use it to develop more robust components that are more general and reusable across business logic and specific use cases.
+
 
 ## Angular Documentation Tools
 
@@ -1093,10 +1122,6 @@ https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API - Mozilla Se
 
 Use a service worker instead :)
 
-## PWA Icons
- 
-TBW   
-
 # Build Tools for Web Applications
 
 The role of a build tool in web applications is take the source development assets for your application and produce optimized assets that
@@ -1161,17 +1186,31 @@ https://nwjs.io/
 
 # Version Control
 
+Source / Version Control allows developers to share and track each individual change to a codebase.
+
+It allows developers to work on the same piece of code and can automate much of the tedious aspects of resolving these conflicts.
+
 ## Mercurial
 
+https://www.mercurial-scm.org/ 
+
 ## SVN (Subversion)
+
+https://subversion.apache.org/
 
 ## GIT - Now the most popular
 
 How merkle trees work https://en.wikipedia.org/wiki/Merkle_tree
 
-# Continuous Deployment / Integration for Teams
+# Continuous Deployment / Integration / Delivery
 
-## Cloud Services
+Continuous deployment is a strategy for software releases wherein any code commit that passes the automated testing phase is automatically released into the production environment, making changes that are visible to the software's users.
+
+Continuous Integration (CI) is a development practice where developers integrate code into a shared repository frequently, preferably several times a day. Each integration can then be verified by an automated build and automated tests. While automated testing is not strictly part of CI it is typically implied.
+
+Continuous delivery (CD) is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time and, when releasing the software, doing so manually. It aims at building, testing, and releasing software with greater speed and frequency. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.
+
+## Cloud Services for Continuous Deployment / Integration / Delivery
 
 #### Microsoft Azure
 
@@ -1187,11 +1226,13 @@ This can be as simple as having a development, QA, UAT and production server but
     
 ## Environment variables: Why and how.
 
-TBW
+Storing sensitive information in your GIT repository makes you vulnerable to unauthorised access.
+
+Because of this it is more useful to have these values parameterised and injected later by your hosting provider or pipeline configuration.
     
-## Safely injecting and encrypting API keys
-    
-TBW
+Environment variables can be used for database credentials, secret keys or any other type of private key / password values.
+
+It also allows for a more synchronised approach when having to update these values later on as the values can be changed in one place instead of across multiple servers in the case of scaled applications.
 
 ## Private Registries / Artefact Repositories
 
@@ -1219,15 +1260,29 @@ https://www.netlify.com/ - All-in-one platform for automating modern web project
     
 # Provisioning Tools / Virtualization / Snapshots
 
-## Chef
+Virtual environments are extremely useful for ensuring that you have a consistent OS and dependency layer for your development and deployment environments. 
 
-TBW
+It takes away the time consuming tasks of provisioning each individual environment and list of dependencies when scaling too.
+
+For developers it can also keep the list of running processed on their local machines free of any bloat from previous projects.
 
 ## Vagrant
 
+https://www.vagrantup.com/intro
+
+Simple, intituive virtual environments (they use more disk space however).
+
 ## Docker 
 
-#### Docker Swarm
+https://www.docker.com/why-docker
+
+Container based approach. Lightweight environments.
+
+## Docker Swarm
+
+Scaling made easy.
+
+https://www.sumologic.com/glossary/docker-swarm/#:~:text=A%20Docker%20Swarm%20is%20a,join%20together%20in%20a%20cluster.&text=Docker%20swarm%20is%20a%20container,deployed%20across%20multiple%20host%20machines.
 
 ## PM2 (Production Process Manager)
 
@@ -1386,14 +1441,14 @@ While there are many relational databases, over time these have become the most 
 - PostgreSQL - PostgreSQL, often simply Postgres, is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance.
 - DB2 - DB2 is an RDBMS designed to store, analyze and retrieve data efficiently.
 
-###### Advantages
+##### Advantages
 
 - Relational databases are well-documented and mature technologies, and RDBMS are sold and maintained by a number of established corporations.
 - SQL standards are well-defined and commonly accepted.
 - A large pool of qualified developers have experience with SQL and RDBMS.
 - All RDBMS are ACID-compliant, meaning they satisfy the requirements of Atomicity, Consistency, Isolation, and Durability.
 
-###### Disadvantages
+##### Disadvantages
 
 - RDBMSes don’t work well — or at all — with unstructured or semi-structured data, due to schema and type constraints. This makes them ill-suited for large analytics or IoT event loads.
 - The tables in your relational database will not necessarily map one-to-one with an object or class representing the same data.
@@ -1403,17 +1458,17 @@ While there are many relational databases, over time these have become the most 
 
 NoSQL databases emerged as a popular alternative to relational databases as web applications became increasingly complex. NoSQL/Non-relational databases can take a variety of forms. However, the critical difference between NoSQL and relational databases is that RDBMS schemas rigidly define how all data inserted into the database must be typed and composed, whereas NoSQL databases can be schema agnostic, allowing unstructured and semi-structured data to be stored and manipulated.
 
-###### Types
+##### Types
 
 Note that some products may fall into more than one category. For example, Couchbase is both a document database and a key-value store.
 
-######## Key-Value Stores
+###### Key-Value Stores
 
 Key-Value Stores, such as Redis and Amazon DynamoDB, are extremely simple database management systems that store only key-value pairs and provide basic functionality for retrieving the value associated with a known key.
 
 The simplicity of key-value stores makes these database management systems particularly well-suited to embedded databases, where the stored data is not particularly complex and speed is of paramount importance.
 
-######## Wide-Column Stores
+###### Wide-Column Stores
 
 Wide Column Stores, such as Cassandra, Scylla, and HBase, are schema-agnostic systems that enable users to store data in column families or tables, a single row of which can be thought of as a record — a multi-dimensional key-value store.
 
@@ -1421,13 +1476,13 @@ These solutions are designed with the goal of scaling well enough to manage peta
 
 Although technically schema-free, wide column stores like Scylla and Cassandra use an SQL variant called CQL for data definition and manipulation, making them straightforward to those already familiar with RDBMS.
 
-######## Document Stores
+###### Document Stores
 
 Document Stores, including MongoDB and Couchbase, are schema-free systems that store data in the form of JSON documents. Document stores are similar to key-value or wide column stores, but the document name is the key and the contents of the document, whatever they are, are the value.
 
 In a document store, individual records do not require a uniform structure, can contain many different value types, and can be nested. This flexibility makes them particularly well-suited to manage semi-structured data across distributed systems.
 
-######## Graph Databases
+###### Graph Databases
 
 Graph Databases, such as Neo4J and Datastax Enterprise Graph, represent data as a network of related nodes or objects in order to facilitate data visualizations and graph analytics.
 
@@ -1435,7 +1490,7 @@ A node or object in a graph database contains free-form data that is connected b
 
 As a result, graph databases are typically used when analysis of the relationships between heterogeneous data points is the end goal of the system, such as in fraud prevention, advanced enterprise operations, or Facebook’s original friends graph.
 
-######## Search Engines
+##### Search Engines
 
 Search Engines, such as Elasticsearch, Splunk, and Solr, store data using schema-free JSON documents. They are similar to document stores, but with a greater emphasis on making your unstructured or semi-structured data easily accessible via text-based searches with strings of varying complexity.
 
