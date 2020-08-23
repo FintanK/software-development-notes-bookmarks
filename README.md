@@ -561,13 +561,122 @@ Express.js middleware functions are functions that have access to the request ob
 
 https://docs.nestjs.com/
 
+This is my favourite Node.js framework at the moment.
+
 If you're a React or Angular developer today using Typescript, this framework will be quite intuitive. 
 
-Nest.js is a backend framework that allows you to develop scalable APIs or any other type of backend service you require. It is built on top of Express.js but allows for a more structured enterprise-grade codebase using Typescript.
+Nest.js is a backend framework that allows you to develop scalable APIs or any other type of backend service you require. It is built on top of Express.js but allows for a more structured enterprise-grade codebase using Typescript. You can switch out express for another type of middleware for better performance e.g. fastify.
+
+Nest comes with it's own monorepo architecture so there's no need for NX.
+
+Best using NX for a full stack project with both Angular / Vue /  React AND Nest.js.
+
+###### Setting Up Nest.
+
+```bash
+$ npm i -g @nest/cli
+$ nest new <your_project_name>
+$ nest generate application
+```
 
 
-More to come..
+###### Nest.js Project Information
 
+```bash
+nest info
+```
+
+Example Output
+
+```bash
+ _   _             _      ___  _____  _____  _     _____
+| \ | |           | |    |_  |/  ___|/  __ \| |   |_   _|
+|  \| |  ___  ___ | |_     | |\ `--. | /  \/| |     | |
+| . ` | / _ \/ __|| __|    | | `--. \| |    | |     | |
+| |\  ||  __/\__ \| |_ /\__/ //\__/ /| \__/\| |_____| |_
+\_| \_/ \___||___/ \__|\____/ \____/  \____/\_____/\___/
+
+
+[System Information]
+OS Version     : Windows 10
+NodeJS Version : v10.16.0
+NPM Version    : 6.11.3
+
+[Nest CLI]
+Nest CLI Version : 7.5.1
+
+[Nest Platform Information]
+platform-express version : 7.0.0
+common version           : 7.0.0
+core version             : 7.0.0
+```
+
+###### Nest.js Adding Dependencies
+
+Use the nest CLI to add dependencies as it will allow you to choose which apps and modules to add it to.
+
+```bash
+$ nest add <npm-module-name>
+```
+
+
+###### Nest.js Updating dependencies
+
+```bash
+nest update
+```
+
+###### Nest.js Scaffolding the framework design patterns.
+
+You can preview the changes made which each of these commands by appending **--dry-run**
+
+```bash
+$ nest generate application <your_app_name>
+$ nest generate class <path/your_class_name>        
+$ nest generate configuration
+$ nest generate controller <path/your_controller_name>
+$ nest generate decorator <path/your_decorator_name>
+$ nest generate filter  <path/your_filter_name>   
+$ nest generate gateway <path/your_gateway_name>
+$ nest generate guard <path/your_guard_name>
+$ nest generate interceptor <path/your_interceptor_name>
+$ nest generate interface <path/your_interface_name>  
+$ nest generate middleware <path/your_middleware_name>  
+$ nest generate module <path/your_module_name>       
+$ nest generate pipe <path/your_pipe_name>      
+$ nest generate provider <path/your_provider_name>
+$ nest generate resolver <path/your_resolver_name>    
+$ nest generate service <path/your_service_name>    
+$ nest generate library <path/your_library_name>    
+$ nest generate sub-app <sub_app_name>      
+$ nest generate resource <path/resource_name>
+```
+
+###### Nest.js Running the app
+
+```bash
+# development
+$ nest start <app_name> --watch
+
+# production mode
+$ nest build <app_name> (Generates native Javascript for Node.js)
+$ node dist/<app_name> main.js
+```
+
+###### Nest.js Tests
+
+Run all tests to make sure that no shared modules are broken between projects.
+
+```bash
+# unit tests
+$ npm run test
+
+# API Integration Tests
+$ npm run test:e2e
+
+# test coverage
+$ npm run test:cov
+```
 
 #### Nodemon
 
