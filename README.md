@@ -1387,11 +1387,126 @@ https://www.docker.com/why-docker
 
 Container based approach. Lightweight environments.
 
-## Docker Swarm
+### Fastest Environment Setup
 
-Scaling made easy.
+1. Download and Install Docker Desktop for Windows
 
-https://www.sumologic.com/glossary/docker-swarm/#:~:text=A%20Docker%20Swarm%20is%20a,join%20together%20in%20a%20cluster.&text=Docker%20swarm%20is%20a%20container,deployed%20across%20multiple%20host%20machines.
+https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe
+
+4. Download and install AWS CLI tool
+
+https://s3.amazonaws.com/aws-cli/AWSCLI64PY3.msi
+
+on your terminal type   
+
+`AWS configure`
+
+> Access Key Id - ```<your key>```  
+> Secret Access Key - ```<your secret>```  
+> Region - ```eu-west-1```  
+> Format - ```json```  
+
+That should save your credentials on ~/.aws/credentials and config files consecutively.
+
+Now you can login onto AWS ECR services
+
+```$(aws ecr get-login --no-include-email)```  
+  
+5. Run docker compose to spawn each service
+
+``` docker-compose up -d```  
+
+This should download images from ECR repository and start services consecutively. If you have Kitematic installed you'll be able to see the logs of each container and your App should start at 127.0.0.1:8080
+
+# Install Docker and Kitematic
+
+1. Install https://www.docker.com/products/docker-desktop
+2. Use the Native Docker GUI (Docker Desktop)
+3. Install Kitematic (optional but recommended)
+    - Official download (latest): https://github.com/docker/kitematic/releases
+
+## Build docker images (assuming you're in the folder where `docker-compose.yml` lives)
+
+https://hub.docker.com/search?q=&type=image - Search for a docker image
+
+- `docker build -t <image-name> <whatever-custom-container-name>/.`
+
+## Run docker compose
+
+Run `docker-compose up -d` and in Kitematic, view the logs for your custom container.
+
+# Helpful Docker commands and code snippets
+
+## CONTAINERS
+`docker pull <image>` - Pulls an image from the repo  
+`docker run -it <image:tag>` - This will run a container based on its image. If no entrypoint is determined it should redirect to its terminal. When running containers add tag "--name" for easy access and identification. Also adding a tag "--rm" it removes it from a dangling list once exited.  
+`docker run -it --entrypoint bash <image:tag>` - To overwrite a default entrypoint of a container  
+`docker ps` - list all running containers, add "-a" to list all containers including the stopped ones  
+`docker stop $(docker ps -a -q) #stop ALL containers`  
+`docker rm -f $(docker ps -a -q) # remove ALL containers`  
+`docker rm -f $(sudo docker ps --before="container_id_here" -q) # can also filter`
+
+### exec into container
+- This works only on a running container, the reason is beacuse containers are supposed to be immutable.  
+  
+`docker exec -it $(docker container ls  | grep '<seach_term>' | awk '{print $1}') sh`
+
+### Exec into container on windows with Git Bash
+`winpty docker exec -it $(docker container ls  | grep '<seach_term>' | awk '{print $1}') sh`
+
+### Helps with error: 'unexpected end of JSON input'
+`docker rm -f $(docker ps -a -q) # Remove all in one command with --force`
+`docker exec -i -t "container_name_here" /bin/bash # Go to container command line`
+
+### To exit above use 'ctrl p', 'ctrl q' (don't exit or it will be in exited state)
+`docker rm $(docker ps -q -f status=exited) # remove all exited containers`
+
+## IMAGES
+### List images and containers
+`docker images | grep "search_term_here"`
+
+### Remove image(s) (must remove associated containers first)
+`docker rmi -f image_id_here # remove image(s)`
+`docker rmi -f $(docker images -q) # remove ALL images!!!`
+`docker rmi -f $(docker images | grep "^<none>" | awk '{print $3}') # remove all <none> images`
+`docker rmi -f $(docker images | grep 'search_term_here' | awk '{print $1}') # i.e. 2 days ago`
+`docker rmi -f $(docker images | grep 'search_1\|search_2' | awk '{print $1}')`
+
+## DELETE BOTH IMAGES AND CONTAINERS
+`docker images && docker ps -a`
+
+### Stop and remove containers and associated images with common grep search term
+```
+docker ps -a --no-trunc  | grep "search_term_here" | awk "{print $1}" | xargs -r --no-run-if-empty docker stop && \
+docker ps -a --no-trunc  | grep "search_term_here" | awk "{print $1}" | xargs -r --no-run-if-empty docker rm && \
+docker images --no-trunc | grep "search_term_here" | awk "{print $3}" | xargs -r --no-run-if-empty docker rmi
+```
+
+### Stops only exited containers and delete only non-tagged images
+`docker ps --filter 'status=Exited' -a | xargs docker stop docker images --filter "dangling=true" -q | xargs docker rmi`
+
+## DELETE NETWORKS AND VOLUMES
+### Clean up orphaned volumes
+`docker volume rm $(docker volume ls -qf dangling=true)`
+
+### Clean up orphaned networks
+`docker network rm $(docker network ls -q)`
+
+## NEW IMAGES/CONTAINERS
+### Create new docker container, ie. ubuntu
+`docker pull ubuntu:latest`
+`docker run -i -t ubuntu /bin/bash # drops you into new container as root`
+
+## OTHER
+
+### Install docker first using directions for installing latest version
+https://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit
+
+### Other great tips: 
+http://www.centurylinklabs.com/15-quick-docker-tips/
+
+### Fix fig / docker config: 
+https://gist.github.com/RuslanHamidullin/94d95328a7360d843e52
 
 ## PM2 (Production Process Manager)
 
@@ -2029,6 +2144,7 @@ WebVR Specification https://webvr.info/
 WebVR Experiments https://experiments.withgoogle.com/collection/webvr
 
 # How to Close a Port in Windows
+
 To close a port in Windows, you need to find the process ID of the application or service that opened the connection. Then, you can terminate the process or configure the application or service.
 
 > netstat -ano | find ":3306"
