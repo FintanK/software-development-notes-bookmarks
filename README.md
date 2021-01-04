@@ -116,9 +116,14 @@ Semantic UI https://semantic-ui.com/
 
 A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on.
 
-#### SASS
+#### SASS (Syntatically Awesome Style Sheets)
 
-#### LESS
+https://sass-lang.com/documentation - Documentation
+https://medium.com/@andrew_barnes/bem-and-sass-a-perfect-match-5e48d9bc3894 - BEM (Block Element Modifier)
+
+#### LESS (Leaner Style Sheets)
+
+http://lesscss.org/features/ - Documentation
 
 #### Stylus
 
@@ -421,7 +426,8 @@ Whilst these frameworks might not follow the official W3C outlines for web compo
 
 ## Frontend Responsive Design
 
-Media Queries
+CSS Media Queries - https://css-tricks.com/a-complete-guide-to-css-media-queries/
+CSS Flexbox - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 ## Client Side Detection
 
@@ -457,6 +463,7 @@ Scientamobile - https://www.scientiamobile.com/
 
 ## WebStorm
 
+Webtorm Guide https://www.jetbrains.com/help/webstorm/getting-started-with-webstorm.html#ws_getting_started_open_project
 Use GIT Bash for the terminal in Webstorm https://gist.github.com/sadikaya/f5fa699c435ebfafece2fb7d982bcdb5
 
 # Web Servers
@@ -479,6 +486,7 @@ Official website https://www.iis.net/overview
 Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-iis-10-version-1709/new-features-introduced-in-iis-10-1709
 
 ## Software Architecture
+
 - [10 common architectural patterns](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013) - 10 Common software architectural patterns in a nutshell.
 - [reactive design patterns](https://www.reactivedesignpatterns.com/categories.html) - This website accompanies the book Reactive Design Patterns by Roland Kuhn.
 - [scalable System Design Patterns](https://dzone.com/articles/scalable-system-design) - Scalable system design techniques.
@@ -487,6 +495,7 @@ Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-ii
 - [architecting-for-reliability](https://medium.com/becloudy/architecting-for-reliability-part-1-concepts-17028343089) - Architecting for Reliability Part 1/3.
 
 # Cloud Architecture
+
 - [AWS cloud design patterns](http://en.clouddesignpattern.org/index.php/Main_Page) - The AWS Cloud Design Patterns (CDP).
 - [Azure cloud design patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns) - Building reliable, scalable, secure applications in the cloud.
 - [cloud patterns](http://cloudpatterns.org) - A community site dedicated to documenting a master patterns catalog.
@@ -494,6 +503,7 @@ Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-ii
 - [Google Cloud Solutions](https://gcp.solutions) - Real business cases solutions with diagrams on GCP.
 
 # Serverless Architecture
+
 - [serverless architecture](https://thenewstack.io/serverless-architecture-five-design-patterns) - Serverless Architecture: Five Design Patterns.
 - [solving problems in serverless](https://freecontent.manning.com/patterns-for-solving-problems-in-serverless-architectures) - Patterns for Solving Problems in Serverless Architectures.
 
@@ -507,6 +517,7 @@ Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-ii
 - [enterprise Integration Patterns](http://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html) - Patterns and Best Practices for Enterprise Integration.
 
 # Docker and DevOps
+
 - [containerspatterns](https://l0rd.github.io/containerspatterns) - There are a Thousand Ways to Use Containers.
 - [container-anti-patterns](http://blog.arungupta.me/docker-container-anti-patterns) - 10 containers anti-patterns.
 - [kubernetes](https://github.com/gravitational/workshop/blob/master/k8sprod.md) - Kubernetes Production Patterns.
@@ -515,6 +526,7 @@ Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-ii
 - [best-practices-for-shell-scripts](https://stackoverflow.com/questions/78497/design-patterns-or-best-practices-for-shell-scripts) - Best practices for shell scripts.
 
 # Security
+
 - [opensecurityarchitecture](http://www.opensecurityarchitecture.org/cms/library/patternlandscape) - Security Architecture Patterns.
 - [martinfowler](https://www.martinfowler.com/articles/web-security-basics.html) - Web-security-basics.
 - [cloud-security](https://www.infoq.com/articles/cloud-security-architecture-intro) - Cloud security architecture intro.
@@ -538,8 +550,6 @@ Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-ii
 - Semantic Versioning https://flaviocopes.com/npm-semantic-versioning/
 - Package-lock.json - https://flaviocopes.com/package-lock-json/
 - Functional programming: https://medium.freecodecamp.org/an-introduction-to-functional-programming-style-in-javascript-71fcc050f064 (Pure, impure functions)
-
-Much more to come here.
 
 ## Popular Node.js Frameworks, Libraries and Packages.
 
@@ -579,7 +589,6 @@ $ nest new <your_project_name>
 $ nest generate application
 ```
 
-
 ###### Nest.js Project Information
 
 ```bash
@@ -618,7 +627,6 @@ Use the nest CLI to add dependencies as it will allow you to choose which apps a
 ```bash
 $ nest add <npm-module-name>
 ```
-
 
 ###### Nest.js Updating dependencies
 
@@ -727,8 +735,6 @@ Purely functional Javascript utility Library
 
 https://github.com/ramda/ramda
 
-Much more to come!
-
 # Typescript
 
 - Official Handbook https://www.typescriptlang.org/docs/handbook/basic-types.html
@@ -756,7 +762,6 @@ AirBNB TSLint (Just extend this in your TSLint configuration to use it in your p
 - Angular Universal (Server Side Rendering) https://angular.io/guide/universal
 - Bundle size budget warnings for your builds https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/budgets.md
 - https://christianlydemann.com/the-ten-commandments-of-angular-development/#two - The Ten Commandments of Angular Development
-
 
 ## Learning resources
 
@@ -944,7 +949,6 @@ export class YourCustomComponent implements OnInit {
    }
 
 };
-
 ```
 
 You can however define functions in your store that care of all of the logic for navigating the state and getting the data your are looking for. These can be imported and used to select data specifically from your store. Your component can then store the observables and use asynch in your components to handle changes to the state reactively.
@@ -998,7 +1002,7 @@ If an effect fetches data from an external source then it will dispatch an actio
 
 Effects don't perform service calls themselves. They will typically offload that work to an Angular service.
 
-#### NgRX Facades
+#### NGRX Facades
 
 This pattern is purely optional but once implemented provides a much cleaner implementation with NgRX on the component level.
 
@@ -1008,7 +1012,7 @@ Its also supported by Nx Angular Schematics!
 
 https://medium.com/@thomasburleson_11450/ngrx-facades-better-state-management-82a04b9a1e39
 
-#### NgRX Entities
+#### NGRX Entities
 
 A great tutorial https://blog.angular-university.io/ngrx-entity/#operationssupportedbythengrxentityadapter
 
@@ -1032,7 +1036,7 @@ It will also visualize your state tree in an easy to understand way if you index
 
 You can download the extension here http://extension.remotedev.io/
 
-#### Setting up NgRX Router Store
+#### Setting up NGRX Router Store
 
 This allows us to integrate our router state to the redux store in our application which is quite useful for even more debugging with
 our dev tools. It also makes our application more reactive.
@@ -1062,8 +1066,6 @@ This is a controversial topic depending on which developers / teams and organisa
 
 I've personally learned over time that as long as the structure is modular, maintainable and as intuitive as possible for everyone then
 that's the best compromise.
-
-More on this to come..
 
 ## Angular Unit Testing
 
@@ -1121,7 +1123,6 @@ Provides
 
 https://blog.nrwl.io/nrwl-nx-7-0-better-e2e-testing-with-cypress-1b88336bef5e - Better E2E Testing with Cypress
 
-
 #### Storybook
 
 https://storybook.js.org/docs/react/get-started/introduction
@@ -1129,7 +1130,6 @@ https://storybook.js.org/docs/react/get-started/introduction
 Storybook allows for a more collaborative approach to developing UI components with React, Vue and Angular.
 
 QA, Developers and UX Teams can use it to develop more robust components that are more general and reusable across business logic and specific use cases.
-
 
 ## Angular Documentation Tools
 
@@ -1399,7 +1399,9 @@ https://s3.amazonaws.com/aws-cli/AWSCLI64PY3.msi
 
 on your terminal type   
 
-`AWS configure`
+```
+aws configure
+```
 
 > Access Key Id - ```<your key>```  
 > Secret Access Key - ```<your secret>```  
@@ -1410,11 +1412,15 @@ That should save your credentials on ~/.aws/credentials and config files consecu
 
 Now you can login onto AWS ECR services
 
-```$(aws ecr get-login --no-include-email)```  
+```
+$(aws ecr get-login --no-include-email)
+```  
   
 5. Run docker compose to spawn each service
 
-``` docker-compose up -d```  
+```
+docker-compose up -d
+```  
 
 This should download images from ECR repository and start services consecutively. If you have Kitematic installed you'll be able to see the logs of each container and your App should start at 127.0.0.1:8080
 
@@ -1429,36 +1435,82 @@ This should download images from ECR repository and start services consecutively
 
 https://hub.docker.com/search?q=&type=image - Search for a docker image
 
-- `docker build -t <image-name> <whatever-custom-container-name>/.`
+```
+docker build -t <image-name> <whatever-custom-container-name>/.
+```
 
 ## Run docker compose
 
-Run `docker-compose up -d` and in Kitematic, view the logs for your custom container.
+Run 
+
+```
+docker-compose up -d
+``` 
+
+and in Kitematic, view the logs for your custom container.
 
 # Helpful Docker commands and code snippets
 
 ## CONTAINERS
-`docker pull <image>` - Pulls an image from the repo  
-`docker run -it <image:tag>` - This will run a container based on its image. If no entrypoint is determined it should redirect to its terminal. When running containers add tag "--name" for easy access and identification. Also adding a tag "--rm" it removes it from a dangling list once exited.  
-`docker run -it --entrypoint bash <image:tag>` - To overwrite a default entrypoint of a container  
-`docker ps` - list all running containers, add "-a" to list all containers including the stopped ones  
-`docker stop $(docker ps -a -q) #stop ALL containers`  
-`docker rm -f $(docker ps -a -q) # remove ALL containers`  
-`docker rm -f $(sudo docker ps --before="container_id_here" -q) # can also filter`
 
-### exec into container
-- This works only on a running container, the reason is beacuse containers are supposed to be immutable.  
+Pull an image from the repo 
+
+```
+docker pull <image>
+```
+
+This will run a container based on its image. If no entrypoint is determined it should redirect to its terminal. When running containers add tag "--name" for easy access and identification. Also adding a tag "--rm" it removes it from a dangling list once exited.  
+
+```
+docker run -it <image:tag>
+``` 
+
+To overwrite a default entrypoint of a container  
+
+```
+docker run -it --entrypoint bash <image:tag>
+```
+
+List all running containers, add "-a" to list all containers including the stopped ones  
+
+```
+docker ps
+```
+
+Stop all containers
+
+```
+docker stop $(docker ps -a -q)
+```
+
+Remove all containers
+
+```
+docker rm -f $(docker ps -a -q)
+```  
+
+Remove container by container ID
+
+```
+docker rm -f $(sudo docker ps --before="container_id_here" -q)
+```
+
+### CLI access into a container
+
+This works only on a running container, the reason is beacuse containers are supposed to be immutable.  
   
-`docker exec -it $(docker container ls  | grep '<seach_term>' | awk '{print $1}') sh`
+```
+docker exec -it $(docker container ls  | grep '<seach_term>' | awk '{print $1}') sh
+```
 
 ### Exec into container on windows with Git Bash
-`winpty docker exec -it $(docker container ls  | grep '<seach_term>' | awk '{print $1}') sh`
 
-### Helps with error: 'unexpected end of JSON input'
-`docker rm -f $(docker ps -a -q) # Remove all in one command with --force`
-`docker exec -i -t "container_name_here" /bin/bash # Go to container command line`
+```
+winpty docker exec -it $(docker container ls  | grep '<seach_term>' | awk '{print $1}') sh
+```
 
 ### To exit above use 'ctrl p', 'ctrl q' (don't exit or it will be in exited state)
+
 `docker rm $(docker ps -q -f status=exited) # remove all exited containers`
 
 ## IMAGES
@@ -1577,41 +1629,34 @@ pm2 start app.js --no-autorestart
 
 # Kubernetes Container Orchestration
 
-TBW
+https://kubernetes.io/docs/home/ - Kubernetes Documentation
  
 # Removing friction from the development workflow
 
-## Environment Variables
-
-TBW
-
 ## Semantic Versioning
 
-TBW
+https://github.com/semantic-release/semantic-release
 
 ## Automate release notes
 
-TBW
+https://github.com/semantic-release/changelog - Useful NPM library that works with the conventional commit to gather commits and generate changelogs for each release.
 
 ## Avoiding scope creep
 
-
-## Removing the need for hotfixes 
-
-TBW
+https://www.teamgantt.com/guide-to-project-management/taming-scope-creep
 
 # Software Development and Testing Strategies
 
 ## Principles of Software Engineering
 
-Rigor and formality
-Separation of concerns
-Modularity and decomposition
-Abstraction
-Anticipation of change
-Generality
-Incremental Development
-Reliability
+- Rigor and formality
+- Separation of concerns
+- Modularity and decomposition
+- Abstraction
+- Anticipation of change
+- Generality
+- Incremental Development
+- Reliability
 
 ## Software Engineering Concepts
 
@@ -1621,29 +1666,61 @@ https://facebook.github.io/flux/docs/overview.html#content - Flux Architecture
 
 #### DRY Principles 
 
+https://thevaluable.dev/dry-principle-cost-benefit-example/
+
 #### Service-Oriented Architecture
+
+https://www.ibm.com/support/knowledgecenter/en/SSMQ79_9.5.1/com.ibm.egl.pg.doc/topics/pegl_serv_overview.html
 
 #### Microservices
 
+https://microservices.io/presentations/index.html - Avoid the monolith
+
 #### Functional Programming 
+
+https://www.tutorialspoint.com/functional_programming/functional_programming_introduction.htm
 
 #### Reactive Programming
 
+https://medium.com/@kevalpatel2106/what-is-reactive-programming-da37c1611382
+
 #### Unit Testing
+
+https://www.tutorialspoint.com/software_testing_dictionary/unit_testing.htm
 
 #### Load Testing
 
+https://www.tutorialspoint.com/software_testing_dictionary/load_testing.htm
+
 #### Code Coverage
+
+https://www.educba.com/code-coverage/
 
 #### Integration Testing
 
+https://softwaretestingfundamentals.com/integration-testing/
+
 #### BDD (Behaviour driven development)
+
+https://www.agilealliance.org/glossary/bdd/
 
 #### End to end testing
 
+https://www.guru99.com/end-to-end-testing.html
+
 #### SOLID Principles
 
-#### Cross Browser Testing    
+https://medium.com/mindorks/solid-principles-explained-with-examples-79d1ce114ace
+
+S - Single Responsibility Principle (known as SRP)
+O - Open/Closed Principle
+L - Liskov’s Substitution Principle
+I - Interface Segregation Principle
+D - Dependency Inversion Principle
+
+#### Cross Browser Testing  
+
+https://www.browserstack.com/cross-browser-testing
   
 # Databases
 
@@ -1823,7 +1900,6 @@ Class or table locking means that all instances of either a class or table are l
 
 Instance locking locks a single relational tuple in an RDBMS or a single object in an ODBMS
 
-
 ## Database Normalisation
 
 Database normalization is process used to organize a database into tables and columns. The idea is that a table should be about a specific topic and that only those columns which support that topic are included. For example, a spreadsheet containing information about sales people and customers serves several purposes:
@@ -1884,11 +1960,6 @@ Official documentation http://cassandra.apache.org/doc/latest/
 
 Official Documentation http://docs.couchdb.org/en/stable/
 
-# Logging
-
-TBW
-  
-
 # Release Management
 
 ## GIT Branching Strategies 
@@ -1910,26 +1981,40 @@ NPM Semantic versioning guide https://docs.npmjs.com/about-semantic-versioning
 
 https://www.npmjs.com/package/semantic-release - Automate how your NPM package.json file versions are incremented when releasing a package.
 
- 
 # Coding Standards
 
 - Google HTML and CSS Code Standards https://google.github.io/styleguide/htmlcssguide.htmlRDFa is an extension to HTML5 that helps you markup things like People, Places, Events, Recipes and Reviews. Search Engines and Web Services use this markup to generate better search listings and give you better visibility on the Web, so that people can find your website more easily.
 
 # Scaling applications for Enterprise use and large traffic
 
-## An introduction to Software Scaling
+## An Introduction to Software Scaling
 
-### Horizontal Scaling
+You may face dozens of different issues when it comes to scaling. A few general sources of your problems may be related to:
 
-#### Vertical Scaling
+- Limited physical resources like memory, CPUs, etc.,
+- Wrong memory management
+- Inefficient database engine
+- The complicated database schema, bad indexing
+- Poorly performed database queries
+- Wrong server configuration
+- App server limitations
+- Overall spaghetti code
+- Inefficient caching
+- Lack of monitoring tools
+- Too many external dependencies
+- Improper background jobs design
 
-## The Role of Clustering
+### Horizontal and Vertical Scaling
 
-#### Application clustering
+https://www.scalyr.com/blog/horizontal-scalability-software/
 
-#### Server clustering
+### Server clustering
 
-## Load Balancers
+https://www.ibm.com/developerworks/aix/tutorials/clustering/clustering.html
+
+### Load Balancers
+
+https://www.ibm.com/cloud/learn/load-balancing
 
 ## Tools
   
@@ -1940,13 +2025,13 @@ https://www.npmjs.com/package/semantic-release - Automate how your NPM package.j
 
 ###### Docker Swarm
 
-TBW
+https://docs.docker.com/engine/swarm/ - Docker Swarm Documentation
 
 ###### Docker Tools 
 
--   Docker Desktop https://www.docker.com/products/docker-desktop
--   Kitematic (Simple to use GUI tool to provision docker containers on your desktop). https://kitematic.com/
--   Kubernetes https://kubernetes.io/
+- Docker Desktop https://www.docker.com/products/docker-desktop
+- Kitematic (Simple to use GUI tool to provision docker containers on your desktop). https://kitematic.com/
+- Kubernetes https://kubernetes.io/
 
 # Software Logging
 
@@ -2018,8 +2103,9 @@ The LEAN Startup by Eric Ries http://theleanstartup.com/
 https://www.blueprintsys.com/agile-development-101/agile-methodologies - A guide to Agile Methodologies
 
 #### XP (Extreme Programming)
-     
-
+    
+https://www.techopedia.com/definition/3791/extreme-programming-xp  
+    
 #### Tools
  
 - JIRA  https://www.atlassian.com/software/jira
@@ -2121,7 +2207,7 @@ Bitcoin whitepaper https://bitcoin.org/bitcoin.pdf
 
 EOS Developers Portal https://developers.eos.io/
     
-##  Ethereum
+## Ethereum
 
 Web3 API https://github.com/ethereum/wiki/wiki/JavaScript-API
 
@@ -2133,7 +2219,6 @@ Ganache https://truffleframework.com/ganache
 ## Interesting Blockchain Projects
 
 https://storj.io/ - Distributed data storage with clients earning tokens for the storage they provide.
-
 
 # Virtual Reality
 
@@ -2188,14 +2273,7 @@ https://flask.palletsprojects.com/en/1.1.x/
 
 https://www.sqlalchemy.org/ 
 
-
 ### Other useful modules and packages
 
 https://github.com/davedoesdev/python-jwt - Generate JSON Web Tokens for Authentication
 https://github.com/jazzband/django-oauth-toolkit - Handle authentication using OAuth 2
-
-
-
-
-
-
