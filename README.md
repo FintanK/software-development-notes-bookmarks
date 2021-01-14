@@ -1944,6 +1944,37 @@ Official documentation https://docs.microsoft.com/en-us/sql/sql-server/sql-serve
 
 Official documentation https://www.postgresql.org/docs/manuals/
 
+### Postgres Privileges 
+
+Create user with global privileges
+```
+CREATE USER test ENCRYPTED PASSWORD 'password';
+GRANT CONNECT ON SCHEMA "your-schema" TO test;
+GRANT USAGE ON SCHEMA "your-schema" TO test;
+GRANT CREATE ON SCHEMA "your-schema" TO test;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA "your-schema" TO test;
+GRANT SELECT ON ALL SEQUENCES IN SCHEMA "your-schema" TO test;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA your-schema TO test;
+```
+
+Per table
+
+```
+GRANT ALL PRIVILEGES ON TABLE your-table TO test;
+```
+
+
+Privileges	Description
+SELECT	Ability to execute SELECT operators for a table.
+INSERT	Ability to execute INSERT operators for a table.
+UPDATE	Ability to execute UPDATE operators for a table.
+DELETE	Ability to execute DELETE operators for a table.
+TRUNCATE	Ability to execute TRUNCATE operators on a table.
+REFERENCES	Ability to create external keys (requires privileges for both parent and child tables).
+TRIGGER	Ability to create triggers for a table.
+CREATE	Ability to perform CREATE TABLE operators.
+ALL	Provides all privileges.
+
 ## MongoDB
 
 Official documentation https://docs.mongodb.com
