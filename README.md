@@ -257,6 +257,12 @@ Using a build tool like Webpack or Grunt can allow you to combine multiple css, 
 
 Detecting the user's device can be quite useful when it comes to choosing what types of media to download. For example, you can generate different sizes for an image and then serve smaller images for user's on a mobile browser.
 
+# Multimedia
+
+https://ffmpeg.org/ - FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge. No matter if they were designed by some standards committee, the community or a corporation. It is also highly portable: FFmpeg compiles, runs, and passes our testing infrastructure FATE across Linux, Mac OS X, Microsoft Windows, the BSDs, Solaris, etc. under a wide variety of build environments, machine architectures, and configurations.
+
+https://imagemagick.org/index.php - Use ImageMagick® to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 200) including PNG, JPEG, GIF, HEIC, TIFF, DPX, EXR, WebP, Postscript, PDF, and SVG. ImageMagick can resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
+
 
 # State Management for Web Applications
 
