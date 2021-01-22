@@ -1769,6 +1769,19 @@ The presentation layer formats or translates data for the application layer base
 ### Application Layer
 At this layer, both the end user and the application layer interact directly with the software application. This layer sees network services provided to end-user applications such as a web browser or Office 365. The application layer identifies communication partners, resource availability, and synchronizes communication.
   
+  
+## HTTP - Hypertext Transfer Protocol (HTTP)
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP 
+
+## RPC - Remote Procedure Call
+
+Most computer programs run procedures, or sets of instructions, using the computer's CPU. In other words, the instructions are processed locally on the same computer that the software is running from. Remote procedure calls, however, run procedures on other machines or devices connected to a network. Once the instructions have been run, the results of the procedure are usually returned to the local computer.
+
+For example, a computer without a hard drive may use an RPC to access data from a network file system (NFS). When printing to a network printer, a computer might use an RPC to tell the printer what documents to print. A client system connected to a database server may execute an RPC to process data on the server.
+
+Remote procedure calls are based on the client-server model, where multiple client computers may connect to a server and retrieve data from it. RPCs are typically written in a standard format, such as XML, so that the procedures can be understood by multiple computer platforms. For example, an XML-RPC sent by a Windows computer could be recognized by a Macintosh or Unix-based system
+
 # Databases
 
 ## Database Types
