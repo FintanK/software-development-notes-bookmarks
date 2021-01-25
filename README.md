@@ -2255,6 +2255,7 @@ Awesome PHP https://github.com/ziadoz/awesome-php (Comprehensive .NET Developmen
 Official documentation http://php.net/manual/en/
 Composer (The best PHP package manager for dependency management) https://getcomposer.org/
 Laravel (One of the best PHP Frameworks) - https://laravel.com/
+Artisan console https://laravel.com/docs/8.x/artisan
 Symfony (Also one of the best PHP Frameworks) - https://symfony.com/
 Silex - Lightweight PHP Framework https://silex.symfony.com/
 Wordpress Codex - Build your applications on top of wordpress with custom themes, plugins etc - https://codex.wordpress.org/
