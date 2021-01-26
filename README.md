@@ -2377,3 +2377,121 @@ https://www.sqlalchemy.org/
 
 https://github.com/davedoesdev/python-jwt - Generate JSON Web Tokens for Authentication
 https://github.com/jazzband/django-oauth-toolkit - Handle authentication using OAuth 2
+
+
+
+# Useful CLI Commands
+
+## Windows
+
+#### Check 32 or 64 bit using WMIC
+You can get to know the OS architecture by running the below simple command.
+
+```
+wmic os get OSArchitecture
+```
+
+#### Get the windows installation date
+
+```
+systeminfo | findstr /C:"Install Date"
+```
+
+#### Kill a process by name
+
+```
+Stop-Process -Name ApplicationName
+Stop-process -Name Chrome
+```
+
+#### Kill a process by ID 
+
+```
+Stop-process -Id processId
+```
+
+#### Remove user account password from command prompt
+
+```
+wmic useraccount where name='loginId' set PasswordRequired=false
+```
+
+#### Remove user account password from all accounts
+
+```
+wmic useraccount set PasswordRequired=false
+```
+
+#### Re-enabling passwords for user accounts
+
+```
+wmic useraccount where name='test1' set PasswordRequired=true
+```
+
+#### Disable LAN Connection
+
+```
+netsh interface set interface name="Local Area Connection" admin=DISABLED
+```
+
+#### Change the CLI color
+
+Do you want to change the look of Windows command prompt by changing background color? Windows command prompt has default color settings of black background and white foreground(text). This post explains you how to to change background/foreground colors using ‘color’ command.
+
+‘Color’ command uses below codes to represent various colors.
+
+```
+ 0 = Black       8 = Gray
+    1 = Blue        9 = Light Blue
+    2 = Green       A = Light Green
+    3 = Aqua        B = Light Aqua
+    4 = Red         C = Light Red
+    5 = Purple      D = Light Purple
+    6 = Yellow      E = Light Yellow
+    7 = White       F = Bright White
+ ```
+Once you decide on which colors to use, just input the codes to the command. For example, if you want to use white background with Light blue for text, you should run the below command.
+
+```
+color 79
+```
+
+#### Check your Wifi connection
+
+If you have a WiFi connection, how do you find out if your computer is connected to WiFi or not? The command netsh interface is used to find your WiFi connection status from command prompt.
+
+Execute the below command to know WiFi connection status
+
+```
+netsh interface show interface | findstr /C:"Wireless" /C:"Name"
+```
+
+Example on my Windows 7 computer
+
+```
+C:\>netsh interface show interface | findstr /C:"Wireless" /C:"Name"
+Admin State    State          Type             Interface Name
+Enabled        Connected      Dedicated        Wireless Network Connection
+```
+As you can see, the command shows that Wifi connection is connected when we ran the command.
+
+If the computer has WiFi enabled, but not connected to any network, then the command output would be like below.
+
+```
+C:\>netsh interface show interface | findstr /C:"Wireless" /C:"Name"
+Admin State    State          Type             Interface Name
+Enabled        Disconnected   Dedicated        Wireless Network Connection
+```
+
+If the Wifi is disabled, then the output would be
+
+```
+C:\>netsh interface show interface | findstr /C:"Wireless" /C:"Name"
+Admin State    State          Type             Interface Name
+Disabled       Disconnected   Dedicated        Wireless Network Connection
+```
+
+This command helps to know the status manually. However if we want to know the status in a script, we would need to refine the command further.
+
+
+
