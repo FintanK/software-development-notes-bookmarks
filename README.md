@@ -100,6 +100,7 @@ This markdown file (which is always a work in progress) helps me revise many of 
 - [Docker and DevOps](#docker-and-devops)
 - [Security](#security)
 - [Node.js](#nodejs)
+  * [Serverless Node.js](#serverless-nodejs)  
   * [Popular Node.js Frameworks, Libraries and Packages.](#popular-nodejs-frameworks-libraries-and-packages)
       - [NPX](#npx)
       - [Express.js](#expressjs)
@@ -971,6 +972,13 @@ Getting started https://docs.microsoft.com/en-gb/iis/get-started/whats-new-in-ii
 - Semantic Versioning https://flaviocopes.com/npm-semantic-versioning/
 - Package-lock.json - https://flaviocopes.com/package-lock-json/
 - Functional programming: https://medium.freecodecamp.org/an-introduction-to-functional-programming-style-in-javascript-71fcc050f064 (Pure, impure functions)
+
+<!-- TOC --><a name="serverless-nodejs"></a>
+## Serverless Node.js
+
+The shift towards serverless architectures is rapidly becoming a pivotal aspect of application development. Even Node.js, which is traditionally used with servers, can be used to build a serverless application.
+
+https://www.serverless.com/framework/docs/getting-started
 
 <!-- TOC --><a name="popular-nodejs-frameworks-libraries-and-packages"></a>
 ## Popular Node.js Frameworks, Libraries and Packages.
